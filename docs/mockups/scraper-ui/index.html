@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Telas do Scraper — E-Scraper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .index-card { max-width: 480px; width: 100%; }
+  .index-card h1 { font-size: 22px; margin-bottom: 6px; }
+  .index-card p { color: var(--text-muted); font-size: 13px; margin-bottom: 20px; }
+  .index-list { display: flex; flex-direction: column; gap: 10px; }
+  .index-list a {
+    display: flex; align-items: center; justify-content: space-between; padding: 14px 16px;
+    border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);
+    color: var(--text-main); text-decoration: none; font-weight: 500; font-size: 14px;
+  }
+  .index-list a:hover { border-color: var(--primary); }
+  .index-list svg { width: 16px; height: 16px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="glass-card index-card">
+    <h1>Telas do Scraper</h1>
+    <p>Mockups estáticos para importar via html.to.design — mesma paleta, tipografia (Outfit) e componentes do app real (frontend/src).</p>
+    <div class="index-list">
+      <a href="monitor.html">Monitores → Produto Único <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a href="monitor-categoria.html">Monitores → Categorias (+ modal produtos) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a href="busca.html">Busca Comparativa / Histórico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a href="sku.html">Busca por SKU <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a href="categoria.html">Varredura por Categoria <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a href="banners.html">Banners de Concorrentes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a href="marcas.html">Gerenciar Marcas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+generator client {
+  provider                    = "prisma-client-py"
+  interface                   = "asyncio"
+  recursive_type_depth        = "5"
+  enable_experimental_decimal = "true"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model banner_assets {
+  id                BigInt              @id @default(autoincrement())
+  sha256            String              @unique(map: "uq_banner_assets_sha256") @db.Char(64)
+  object_key        String              @unique(map: "uq_banner_assets_object_key")
+  extension         String              @db.VarChar(20)
+  content_type      String              @db.VarChar(120)
+  byte_count        BigInt
+  created_at        DateTime            @default(now()) @db.Timestamptz(6)
+  banner_candidates banner_candidates[]
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model banner_candidates {
+  id                BigInt        @id @default(autoincrement())
+  banner_id         String        @unique(map: "uq_banner_candidates_banner") @db.Uuid
+  run_id            BigInt
+  brand_id          BigInt
+  asset_id          BigInt
+  slide_order       Int
+  friendly_filename String
+  source_url        String
+  rendered_url      String
+  click_url         String?
+  alt_text          String?
+  dom_kind          String        @default("img") @db.VarChar(30)
+  rendered_width    Int?
+  rendered_height   Int?
+  natural_width     Int?
+  natural_height    Int?
+  approved          Boolean       @default(false)
+  captured_at       DateTime      @default(now()) @db.Timestamptz(6)
+  created_at        DateTime      @default(now()) @db.Timestamptz(6)
+  banner_assets     banner_assets @relation(fields: [asset_id], references: [id], onUpdate: NoAction, map: "fk_banner_candidates_asset")
+  brands            brands        @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_banner_candidates_brand")
+  banner_runs       banner_runs   @relation(fields: [run_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_banner_candidates_run")
+
+  @@unique([run_id, brand_id, slide_order], map: "uq_banner_candidates_run_brand_slide")
+  @@index([asset_id], map: "ix_banner_candidates_asset")
+  @@index([brand_id], map: "ix_banner_candidates_brand")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model banner_run_brands {
+  run_id        BigInt
+  brand_id      BigInt
+  status        String      @default("PENDING") @db.VarChar(20)
+  banner_count  Int         @default(0)
+  video_count   Int         @default(0)
+  error_message String?
+  brands        brands      @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_banner_run_brands_brand")
+  banner_runs   banner_runs @relation(fields: [run_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_banner_run_brands_run")
+
+  @@id([run_id, brand_id], map: "pk_banner_run_brands")
+  @@index([brand_id], map: "ix_banner_run_brands_brand")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model banner_runs {
+  id                  BigInt                @id @default(autoincrement())
+  run_id              String                @unique(map: "uq_banner_runs_run") @db.Uuid
+  status              String                @default("RUNNING") @db.VarChar(20)
+  error_message       String?
+  created_at          DateTime              @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime              @default(now()) @db.Timestamptz(6)
+  approved_at         DateTime?             @db.Timestamptz(6)
+  banner_candidates   banner_candidates[]
+  banner_run_brands   banner_run_brands[]
+  banner_video_slides banner_video_slides[]
+
+  @@index([status, created_at(sort: Desc)], map: "ix_banner_runs_status_created_at")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model banner_video_slides {
+  id          BigInt      @id @default(autoincrement())
+  run_id      BigInt
+  brand_id    BigInt
+  slide_order Int
+  source_url  String?
+  brands      brands      @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_banner_video_slides_brand")
+  banner_runs banner_runs @relation(fields: [run_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_banner_video_slides_run")
+
+  @@unique([run_id, brand_id, slide_order], map: "uq_banner_video_slides_run_brand_slide")
+  @@index([brand_id], map: "ix_banner_video_slides_brand")
+}
+
+model brand_category_mappings {
+  id             BigInt   @id @default(autoincrement())
+  brand_id       BigInt
+  canonical_slug String   @db.VarChar(160)
+  source_path    String?
+  label          String?  @db.VarChar(200)
+  created_at     DateTime @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime @default(now()) @db.Timestamptz(6)
+  brands         brands   @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_brand_category_mappings_brand")
+
+  @@unique([brand_id, canonical_slug], map: "uq_brand_category_mappings")
+  @@index([brand_id], map: "ix_brand_category_mappings_brand")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model brands {
+  id                      BigInt                    @id @default(autoincrement())
+  brand_key               String                    @unique(map: "uq_brands_brand_key") @db.VarChar(63)
+  brand_name              String                    @db.VarChar(160)
+  domain                  String                    @unique(map: "uq_brands_domain")
+  engine                  String?                   @db.VarChar(63)
+  configuration           Json                      @default("{}")
+  is_active               Boolean                   @default(true)
+  created_at              DateTime                  @default(now()) @db.Timestamptz(6)
+  updated_at              DateTime                  @default(now()) @db.Timestamptz(6)
+  banner_candidates       banner_candidates[]
+  banner_run_brands       banner_run_brands[]
+  banner_video_slides     banner_video_slides[]
+  brand_category_mappings brand_category_mappings[]
+  category_monitors       category_monitors[]
+  category_scans          category_scans[]
+  price_monitors          price_monitors[]
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// This model has constraints using non-default deferring rules and requires additional setup for migrations. Visit https://pris.ly/d/constraint-deferring for more info.
+model category_monitors {
+  id                                                            BigInt           @id @default(autoincrement())
+  brand_id                                                      BigInt
+  category_url                                                  String
+  normalized_url                                                String
+  status                                                        String           @default("active") @db.VarChar(20)
+  last_scanned_at                                               DateTime?        @db.Timestamptz(6)
+  last_scan_id                                                  BigInt?
+  last_scan_status                                              String?          @db.VarChar(20)
+  created_at                                                    DateTime         @default(now()) @db.Timestamptz(6)
+  updated_at                                                    DateTime         @default(now()) @db.Timestamptz(6)
+  brands                                                        brands           @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_category_monitors_brand")
+  category_scans_category_monitors_last_scan_idTocategory_scans category_scans?  @relation("category_monitors_last_scan_idTocategory_scans", fields: [last_scan_id], references: [id], onUpdate: NoAction, map: "fk_category_monitors_last_scan")
+  category_scans_category_scans_monitor_idTocategory_monitors   category_scans[] @relation("category_scans_monitor_idTocategory_monitors")
+
+  @@unique([brand_id, normalized_url], map: "uq_category_monitors_brand_url")
+  @@index([brand_id], map: "ix_category_monitors_brand")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model category_scans {
+  id                                                               BigInt              @id @default(autoincrement())
+  monitor_id                                                       BigInt
+  brand_id                                                         BigInt
+  category_url                                                     String
+  origin                                                           String              @db.VarChar(20)
+  status                                                           String              @default("pending") @db.VarChar(20)
+  product_count                                                    Int                 @default(0)
+  error_message                                                    String?
+  created_at                                                       DateTime            @default(now()) @db.Timestamptz(6)
+  started_at                                                       DateTime?           @db.Timestamptz(6)
+  completed_at                                                     DateTime?           @db.Timestamptz(6)
+  category_monitors_category_monitors_last_scan_idTocategory_scans category_monitors[] @relation("category_monitors_last_scan_idTocategory_scans")
+  brands                                                           brands              @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_category_scans_brand")
+  category_monitors_category_scans_monitor_idTocategory_monitors   category_monitors   @relation("category_scans_monitor_idTocategory_monitors", fields: [monitor_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_category_scans_monitor")
+  scan_products                                                    scan_products[]
+
+  @@index([brand_id, started_at(sort: Desc)], map: "ix_category_scans_brand_time")
+  @@index([monitor_id, started_at(sort: Desc)], map: "ix_category_scans_monitor_time")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model price_history {
+  id                  BigInt         @default(autoincrement())
+  monitor_id          BigInt
+  price               Decimal        @db.Decimal(12, 2)
+  price_original      Decimal?       @db.Decimal(12, 2)
+  last_price_discount Decimal?       @db.Decimal(12, 2)
+  available           Boolean
+  available_colors    String[]       @default([])
+  available_sizes     String[]       @default([])
+  observed_at         DateTime       @default(now()) @db.Timestamptz(6)
+  price_monitors      price_monitors @relation(fields: [monitor_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_price_history_monitor")
+
+  @@id([id, observed_at], map: "pk_price_history")
+  @@index([monitor_id, observed_at(sort: Desc)], map: "ix_price_history_monitor_time")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model price_monitors {
+  id                             BigInt          @id @default(autoincrement())
+  job_id                         String          @unique(map: "uq_price_monitors_job") @db.Uuid
+  brand_id                       BigInt
+  source_key                     String          @db.VarChar(63)
+  product_url                    String
+  normalized_url                 String
+  status                         String          @default("active") @db.VarChar(20)
+  interval_minutes               Int             @default(10)
+  duration_hours                 Int             @default(24)
+  started_at                     DateTime        @default(now()) @db.Timestamptz(6)
+  last_price                     Decimal?        @db.Decimal(12, 2)
+  last_price_original            Decimal?        @db.Decimal(12, 2)
+  last_price_discount            Decimal?        @db.Decimal(12, 2)
+  last_check_state               String?         @db.VarChar(20)
+  last_error                     String?
+  last_checked_at                DateTime?       @db.Timestamptz(6)
+  product_name                   String?
+  image_url                      String?
+  available_colors               String[]        @default([])
+  available_sizes                String[]        @default([])
+  conditional_offers_current     Json            @default("[]")
+  conditional_offers_status      String?         @db.VarChar(30)
+  conditional_offers_checked_at  DateTime?       @db.Timestamptz(6)
+  conditional_offers_diagnostics Json            @default("[]")
+  conditional_offer_history      Json            @default("[]")
+  created_at                     DateTime        @default(now()) @db.Timestamptz(6)
+  updated_at                     DateTime        @default(now()) @db.Timestamptz(6)
+  price_history                  price_history[]
+  brands                         brands          @relation(fields: [brand_id], references: [id], onUpdate: NoAction, map: "fk_price_monitors_brand")
+
+  @@unique([brand_id, source_key, normalized_url], map: "uq_price_monitors_brand_source_url")
+  @@index([brand_id], map: "ix_price_monitors_brand")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model review_comments {
+  id                BigInt        @id @default(autoincrement())
+  scan_product_id   BigInt
+  source_provider   String        @db.VarChar(50)
+  review_id         String        @db.VarChar(200)
+  rating            Decimal?      @db.Decimal(2, 1)
+  title             String?
+  body              String?
+  author_name       String?       @db.VarChar(200)
+  review_created_at DateTime?     @db.Timestamptz(6)
+  source_ref        String?
+  captured_at       DateTime      @default(now()) @db.Timestamptz(6)
+  scan_products     scan_products @relation(fields: [scan_product_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_review_comments_scan_product")
+
+  @@unique([source_provider, review_id], map: "uq_review_comments_provider_review")
+  @@index([scan_product_id, review_created_at(sort: Desc)], map: "ix_review_comments_scan_product_time")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model scan_products {
+  id                     BigInt            @id @default(autoincrement())
+  scan_id                BigInt
+  scan_product_id        String            @db.Uuid
+  source_product_id      String?
+  product_code           String?           @db.VarChar(160)
+  sku_id                 String?           @db.VarChar(160)
+  seller_id              String?           @db.VarChar(160)
+  product_url            String
+  normalized_url         String
+  raw_title              String
+  raw_description        String            @default("")
+  category               String?           @db.VarChar(200)
+  sub_category           String?           @db.VarChar(200)
+  breadcrumb             String[]          @default([])
+  composition            String?
+  collection_ids         String[]          @default([])
+  price_full             Decimal?          @db.Decimal(12, 2)
+  price_discount         Decimal?          @db.Decimal(12, 2)
+  price_without_discount Decimal?          @db.Decimal(12, 2)
+  effective_price        Decimal?          @db.Decimal(12, 2)
+  shipping_price         Decimal?          @db.Decimal(12, 2)
+  landed_price           Decimal?          @db.Decimal(12, 2)
+  is_free_shipping       Boolean           @default(false)
+  stock_availability     Boolean?
+  available_colors       String[]          @default([])
+  available_sizes        String[]          @default([])
+  raw_colors             String[]          @default([])
+  raw_sizes              String[]          @default([])
+  rating                 Decimal?          @db.Decimal(2, 1)
+  review_count           Int?
+  reviews_state          String?           @db.VarChar(30)
+  review_product_id      String?           @db.VarChar(200)
+  specifications         Json              @default("{}")
+  conditional_offers     Json              @default("[]")
+  image_url              String?
+  seller                 String?           @db.VarChar(200)
+  captured_at            DateTime          @default(now()) @db.Timestamptz(6)
+  review_comments        review_comments[]
+  category_scans         category_scans    @relation(fields: [scan_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_scan_products_scan")
+
+  @@unique([scan_id, product_code], map: "uq_scan_products_scan_code")
+  @@unique([scan_id, scan_product_id], map: "uq_scan_products_scan_product")
+  @@index([product_code], map: "ix_scan_products_code")
+  @@index([normalized_url], map: "ix_scan_products_normalized_url")
+  @@index([available_colors], map: "ix_scan_products_colors", type: Gin)
+  @@index([available_sizes], map: "ix_scan_products_sizes", type: Gin)
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model search_job_brands {
+  job_id       BigInt
+  source_key   String      @db.VarChar(63)
+  search_order Int?
+  search_jobs  search_jobs @relation(fields: [job_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_search_job_brands_job")
+
+  @@id([job_id, source_key], map: "pk_search_job_brands")
+  @@index([source_key], map: "ix_search_job_brands_source")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model search_jobs {
+  id                BigInt              @id @default(autoincrement())
+  job_id            String              @unique(map: "uq_search_jobs_job") @db.Uuid
+  query             String
+  target_sku        String?
+  search_type       String              @default("search") @db.VarChar(20)
+  status            String              @default("PENDING") @db.VarChar(20)
+  result_payload    Json?
+  error_message     String?
+  created_at        DateTime            @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime            @default(now()) @db.Timestamptz(6)
+  search_job_brands search_job_brands[]
+
+  @@index([created_at(sort: Desc)], map: "ix_search_jobs_created_at")
+  @@index([status, created_at(sort: Desc)], map: "ix_search_jobs_status_created_at")
+}

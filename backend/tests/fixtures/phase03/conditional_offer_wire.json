@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "wire": {
+    "conditional_offer_result": {
+      "status": "found",
+      "offers": [
+        {
+          "offer_key": "membership:cliente-prime:sku-638383",
+          "condition_type": "membership",
+          "condition_label": "Cliente Prime",
+          "eligibility": "requires_membership",
+          "price": "509.15",
+          "effective_unit_price": "509.15",
+          "discount_value": "15",
+          "discount_unit": "percent",
+          "currency": "BRL",
+          "state": "confirmed"
+        }
+      ],
+      "checked_at": "2026-07-14T00:00:00Z",
+      "probe_level": "full",
+      "sources_attempted": ["reserva_prime"],
+      "diagnostics": [],
+      "cache": {"hit": false, "stale": false, "expires_at": null}
+    },
+    "price_monitor_config": {
+      "job_id": "job-wire-1",
+      "url": "https://www.usereserva.com/camisa-ml-flanela-speed/p",
+      "brand": "reserva",
+      "history": [{"timestamp": "2026-07-14T00:00:00Z", "price": 599.0}],
+      "conditional_offers_current": [
+        {
+          "offer_key": "membership:cliente-prime:sku-638383",
+          "condition_type": "membership",
+          "condition_label": "Cliente Prime",
+          "eligibility": "requires_membership",
+          "price": "509.15",
+          "effective_unit_price": "509.15",
+          "discount_value": "15",
+          "discount_unit": "percent",
+          "currency": "BRL",
+          "state": "confirmed"
+        }
+      ],
+      "conditional_offers_status": "found",
+      "conditional_offers_checked_at": "2026-07-14T00:05:00Z",
+      "conditional_offers_diagnostics": [],
+      "conditional_offer_history": [
+        {
+          "event_type": "changed",
+          "offer_key": "membership:cliente-prime:sku-638383",
+          "before": {
+            "offer_key": "membership:cliente-prime:sku-638383",
+            "condition_type": "membership",
+            "condition_label": "Cliente Prime",
+            "eligibility": "requires_membership",
+            "price": "599.00",
+            "effective_unit_price": "599.00",
+            "discount_value": "15",
+            "discount_unit": "percent",
+            "currency": "BRL",
+            "state": "advertised"
+          },
+          "after": {
+            "offer_key": "membership:cliente-prime:sku-638383",
+            "condition_type": "membership",
+            "condition_label": "Cliente Prime",
+            "eligibility": "requires_membership",
+            "price": "509.15",
+            "effective_unit_price": "509.15",
+            "discount_value": "15",
+            "discount_unit": "percent",
+            "currency": "BRL",
+            "state": "confirmed"
+          },
+          "observed_from": "2026-07-14T00:00:00Z",
+          "observed_until": null,
+          "created_at": "2026-07-14T00:05:00Z"
+        }
+      ]
+    },
+    "start_monitor": {
+      "job_id": "job-wire-1",
+      "status": "created",
+      "config": {
+        "job_id": "job-wire-1",
+        "url": "https://www.usereserva.com/camisa-ml-flanela-speed/p",
+        "brand": "reserva",
+        "conditional_offers_current": [{"price": 509.15, "effective_unit_price": 509.15, "discount_value": 15.0, "discount_unit": "percent"}],
+        "conditional_offer_history": [{"before": {"price": 599.0, "discount_unit": "percent"}, "after": {"price": 509.15, "discount_unit": "percent"}}]
+      }
+    },
+    "add_to_monitor": {
+      "job_id": "job-wire-1",
+      "status": "already_active",
+      "config": {
+        "job_id": "job-wire-1",
+        "url": "https://www.usereserva.com/camisa-ml-flanela-speed/p",
+        "brand": "reserva",
+        "conditional_offers_current": [{"price": 509.15, "effective_unit_price": 509.15, "discount_value": 15.0, "discount_unit": "percent"}],
+        "conditional_offer_history": [{"before": {"price": 599.0, "discount_unit": "percent"}, "after": {"price": 509.15, "discount_unit": "percent"}}]
+      }
+    },
+    "resume_status_only": {"status": "resumed"},
+    "resume_with_config": {
+      "status": "resumed",
+      "config": {
+        "job_id": "job-wire-1",
+        "url": "https://www.usereserva.com/camisa-ml-flanela-speed/p",
+        "brand": "reserva",
+        "conditional_offers_current": [{"price": 509.15, "effective_unit_price": 509.15, "discount_value": 15.0, "discount_unit": "percent"}],
+        "conditional_offer_history": [{"before": {"price": 599.0, "discount_unit": "percent"}, "after": {"price": 509.15, "discount_unit": "percent"}}]
+      }
+    }
+  },
+  "expected_domain": {
+    "conditional_offer_result": {
+      "status": "found",
+      "offers": [{"price": 509.15, "effective_unit_price": 509.15, "discount_value": 15, "discount_unit": "%"}]
+    },
+    "price_monitor_config": {
+      "conditional_offers_current": [{"price": 509.15, "effective_unit_price": 509.15, "discount_value": 15, "discount_unit": "%"}],
+      "conditional_offer_history": [{"before": {"price": 599, "discount_unit": "%"}, "after": {"price": 509.15, "discount_unit": "%"}}]
+    },
+    "start_monitor": {"status": "created", "config": {"conditional_offers_current": [{"price": 509.15, "discount_unit": "%"}]}},
+    "add_to_monitor": {"status": "already_active", "config": {"conditional_offers_current": [{"price": 509.15, "discount_unit": "%"}]}},
+    "resume_status_only": {"status": "resumed"},
+    "resume_with_config": {"status": "resumed", "config": {"conditional_offers_current": [{"price": 509.15, "discount_unit": "%"}]}}
+  }
+}

@@ -1,0 +1,2079 @@
+{
+  "aramis": {
+    "brand_key": "aramis",
+    "brand_name": "Aramis",
+    "domain": "www.aramis.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "trustvox",
+    "review_store_id": "114327",
+    "review_provider_evidence": "PDP publica da Aramis carrega Trustvox com store_id 114327 e data-trustvox-product-code igual ao productId VTEX.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "engine": "wake",
+    "logo_url": null,
+    "wake_access_token": "tcs_arami_244720420cf845788dfb4fe7b048408b",
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/camisa-masculina",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/camiseta-masculina",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/polo-masculina",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/calca-masculina",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/bermuda-masculina",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/jaqueta-masculina",
+        "label": "Jaquetas"
+      },
+      {
+        "canonical_slug": "moletom",
+        "vtex_fq_path": "/moletom-masculino",
+        "label": "Moletons"
+      },
+      {
+        "canonical_slug": "tricots",
+        "vtex_fq_path": "/tricot-masculino",
+        "label": "Tricots"
+      },
+      {
+        "canonical_slug": "alfaiataria",
+        "vtex_fq_path": "/alfaiataria-masculina",
+        "label": "Alfaiataria"
+      },
+      {
+        "canonical_slug": "beachwear",
+        "vtex_fq_path": "/beachwear-masculino",
+        "label": "Beachwear"
+      },
+      {
+        "canonical_slug": "shorts",
+        "vtex_fq_path": "/short-masculino",
+        "label": "Shorts"
+      },
+      {
+        "canonical_slug": "calcados",
+        "vtex_fq_path": "/calcado-masculino",
+        "label": "Calçados"
+      },
+      {
+        "canonical_slug": "acessorios",
+        "vtex_fq_path": "/acessorio-masculino",
+        "label": "Acessórios"
+      },
+      {
+        "canonical_slug": "urban-camisas",
+        "vtex_fq_path": "/urban/camisa-urban-masculina",
+        "label": "Camisa Urban"
+      },
+      {
+        "canonical_slug": "urban-calcados",
+        "vtex_fq_path": "/urban/calcado-urban-masculino",
+        "label": "Calçado Urban"
+      },
+      {
+        "canonical_slug": "urban-calcas",
+        "vtex_fq_path": "/urban/calca-urban-masculina",
+        "label": "Calças Urban"
+      },
+      {
+        "canonical_slug": "urban-camisetas",
+        "vtex_fq_path": "/urban/camiseta-urban-masculina",
+        "label": "Camiseta Urban"
+      },
+      {
+        "canonical_slug": "urban-polos",
+        "vtex_fq_path": "/urban/polo-urban-masculina",
+        "label": "Polo Urban"
+      },
+      {
+        "canonical_slug": "urban-bermudas",
+        "vtex_fq_path": "/urban/bermuda-urban-masculina",
+        "label": "Bermuda Urban"
+      },
+      {
+        "canonical_slug": "urban-jaquetas",
+        "vtex_fq_path": "/urban/jaqueta-urban-masculina",
+        "label": "Jaqueta Urban"
+      },
+      {
+        "canonical_slug": "urban-tricots",
+        "vtex_fq_path": "/urban/tricot-urban-masculino",
+        "label": "Tricot Urban"
+      },
+      {
+        "canonical_slug": "urban-alfaiataria",
+        "vtex_fq_path": "/urban/alfaiataria-urban-masculina",
+        "label": "Alfaiataria Urban"
+      },
+      {
+        "canonical_slug": "urban-acessorios",
+        "vtex_fq_path": "/urban/acessorio-urban-masculino",
+        "label": "Acessório Urban"
+      },
+      {
+        "canonical_slug": "next-camisas",
+        "vtex_fq_path": "/infantil-next/camisa-infantil-next",
+        "label": "Camisa Infantil Next"
+      },
+      {
+        "canonical_slug": "next-camisetas",
+        "vtex_fq_path": "/infantil-next/camiseta-infantil-next",
+        "label": "Camiseta Infantil Next"
+      },
+      {
+        "canonical_slug": "next-polos",
+        "vtex_fq_path": "/infantil-next/polo-infantil-next",
+        "label": "Polo Infantil Next"
+      },
+      {
+        "canonical_slug": "next-calcas",
+        "vtex_fq_path": "/infantil-next/calca-infantil-next",
+        "label": "Calça Infantil Next"
+      },
+      {
+        "canonical_slug": "next-bermudas",
+        "vtex_fq_path": "/infantil-next/bermuda-infantil-next",
+        "label": "Bermuda Infantil Next"
+      },
+      {
+        "canonical_slug": "next-jaquetas",
+        "vtex_fq_path": "/infantil-next/jaqueta-infantil-next",
+        "label": "Jaqueta Infantil Next"
+      },
+      {
+        "canonical_slug": "next-moletons",
+        "vtex_fq_path": "/infantil-next/moletom-infantil-next",
+        "label": "Moletom Infantil Next"
+      },
+      {
+        "canonical_slug": "next-calcados",
+        "vtex_fq_path": "/infantil-next/calcado-infantil-next",
+        "label": "Calçado Infantil Next"
+      },
+      {
+        "canonical_slug": "outlet-camisas",
+        "vtex_fq_path": "/outlet/camisa-masculina-em-oferta",
+        "label": "Camisa Masculina em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-camisetas",
+        "vtex_fq_path": "/outlet/camiseta-masculina-em-oferta",
+        "label": "Camiseta Masculina em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-polos",
+        "vtex_fq_path": "/outlet/polo-masculina-em-oferta",
+        "label": "Polo Masculina em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-calcas",
+        "vtex_fq_path": "/outlet/calca-masculina-em-oferta",
+        "label": "Calça Masculina em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-bermudas",
+        "vtex_fq_path": "/outlet/bermuda-masculina-em-oferta",
+        "label": "Bermuda Masculina em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-shorts",
+        "vtex_fq_path": "/outlet/shorts-masculino-em-oferta",
+        "label": "Shorts Masculino em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-jaquetas",
+        "vtex_fq_path": "/outlet/jaqueta-masculina-em-oferta",
+        "label": "Jaqueta Masculina em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-tricots",
+        "vtex_fq_path": "/outlet/tricot-masculino-em-oferta",
+        "label": "Tricot Masculino em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-calcados",
+        "vtex_fq_path": "/outlet/calcado-masculino-em-oferta",
+        "label": "Calçado Masculino em Oferta"
+      },
+      {
+        "canonical_slug": "outlet-acessorios",
+        "vtex_fq_path": "/outlet/acessorio-masculino-em-oferta",
+        "label": "Acessório Masculino em Oferta"
+      }
+    ],
+    "is_active": true,
+    "domain_aliases": [
+      "aramis.com.br",
+      "www.aramis.com.br"
+    ]
+  },
+  "tommy": {
+    "brand_key": "tommy",
+    "brand_name": "Tommy Hilfiger",
+    "domain": "br.tommy.com",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Sem Trustvox store id e sem evidencia validada de endpoint VTEX Native de comentarios para esta marca.",
+    "vtex_account": null,
+    "engine": "wake",
+    "logo_url": null,
+    "wake_access_token": "tcs_tommy_49b574bea88c408eb3d5a9163aa6b571",
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "foxton": {
+    "brand_key": "foxton",
+    "brand_name": "Foxton Menswear",
+    "domain": "www.foxtonbrasil.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Sem Trustvox store id e sem evidencia validada de endpoint VTEX Native de comentarios para esta marca.",
+    "vtex_account": "foxton",
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "ricardoalmeida": {
+    "brand_key": "ricardoalmeida",
+    "brand_name": "Ricardo Almeida",
+    "domain": "www.ricardoalmeida.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Engine Shopify sem provider de comentarios suportado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "shopify",
+    "logo_url": "https://www.ricardoalmeida.com.br/cdn/shop/files/Logo_RA_nova_-_principal_1.png",
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true,
+    "domain_aliases": [
+      "ricardoalmeida.com.br",
+      "www.ricardoalmeida.com.br"
+    ]
+  },
+  "bck": {
+    "brand_key": "bck",
+    "brand_name": "Buckman",
+    "domain": "buckmanbck.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "domain_aliases": [
+      "buckmanbck.com.br",
+      "www.buckmanbck.com.br",
+      "buckman.com.br",
+      "www.buckman.com.br"
+    ],
+    "extract_via_regex": true,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Engine Shopify sem provider de comentarios suportado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "shopify",
+    "logo_url": "https://buckmanbck.com.br/cdn/shop/files/Copia_de_LOGO-preto.png",
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/collections/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/collections/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/collections/polos",
+        "label": "Polos"
+      }
+    ],
+    "is_active": true
+  },
+  "reserva": {
+    "brand_key": "reserva",
+    "brand_name": "Reserva",
+    "domain": "www.usereserva.com",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [
+      "Grupo de Produtos Similares",
+      "product_group"
+    ],
+    "extract_via_regex": false,
+    "review_provider": "vtex_native",
+    "review_store_id": null,
+    "review_provider_evidence": "Endpoint REST público VTEX /reviews-and-ratings/api/reviews/ ativo e validado.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": "",
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [
+      {
+        "type": "brand_rule_endpoint",
+        "adapter": "reserva_prime",
+        "path": "/_v/rsv-prime/primepromotion",
+        "level": "full",
+        "options": {}
+      }
+    ],
+    "mappings": [
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/reserva/masculino/bermudas-e-shorts",
+        "label": "Bermudas e Shorts"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/reserva/masculino/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/reserva/masculino/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/reserva/masculino/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/reserva/masculino/casacos-e-jaquetas",
+        "label": "Casacos e Jaquetas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/reserva/masculino/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "coletes",
+        "vtex_fq_path": "/reserva/masculino/coletes",
+        "label": "Coletes"
+      },
+      {
+        "canonical_slug": "sungas",
+        "vtex_fq_path": "/reserva/masculino/sungas",
+        "label": "Sungas"
+      },
+      {
+        "canonical_slug": "infantil",
+        "vtex_fq_path": "/mini",
+        "label": "Reserva Mini"
+      },
+      {
+        "canonical_slug": "infantil-camisas",
+        "vtex_fq_path": "/mini/infantil/camisas",
+        "label": "Reserva Mini - Camisas"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/mini/infantil/camisetas",
+        "label": "Reserva Mini - Camisetas"
+      },
+      {
+        "canonical_slug": "infantil-polos",
+        "vtex_fq_path": "/mini/infantil/polos",
+        "label": "Reserva Mini - Polos"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/mini/infantil/calcas",
+        "label": "Reserva Mini - Calças"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/mini/infantil/bermudas",
+        "label": "Reserva Mini - Bermudas"
+      },
+      {
+        "canonical_slug": "infantil-jaquetas",
+        "vtex_fq_path": "/mini/infantil/casacos",
+        "label": "Reserva Mini - Jaquetas & Casacos"
+      },
+      {
+        "canonical_slug": "infantil-moletons",
+        "vtex_fq_path": "/mini/infantil/casacos",
+        "label": "Reserva Mini - Moletons"
+      },
+      {
+        "canonical_slug": "infantil-coletes",
+        "vtex_fq_path": "/mini/infantil/coletes",
+        "label": "Reserva Mini - Coletes"
+      },
+      {
+        "canonical_slug": "infantil-sungas",
+        "vtex_fq_path": "/mini/infantil/sungas",
+        "label": "Reserva Mini - Sungas"
+      },
+      {
+        "canonical_slug": "infantil-blusas",
+        "vtex_fq_path": "/mini/infantil/blusas",
+        "label": "Reserva Mini - Blusas"
+      },
+      {
+        "canonical_slug": "infantil-regatas",
+        "vtex_fq_path": "/mini/infantil/regatas",
+        "label": "Reserva Mini - Regatas"
+      },
+      {
+        "canonical_slug": "infantil-pijamas",
+        "vtex_fq_path": "/mini/infantil/pijamas",
+        "label": "Reserva Mini - Pijamas"
+      },
+      {
+        "canonical_slug": "infantil-cuecas",
+        "vtex_fq_path": "/mini/infantil/cuecas",
+        "label": "Reserva Mini - Cuecas"
+      },
+      {
+        "canonical_slug": "infantil-acessorios",
+        "vtex_fq_path": "/mini/infantil/acessorios",
+        "label": "Reserva Mini - Acessórios"
+      },
+      {
+        "canonical_slug": "infantil-bebe-bodies",
+        "vtex_fq_path": "/mini/bebe/bodies",
+        "label": "Reserva Mini Bebê - Bodies"
+      }
+    ],
+    "is_active": true,
+    "domain_aliases": [
+      "usereserva.com",
+      "www.usereserva.com",
+      "reserva.com.br",
+      "www.reserva.com.br"
+    ]
+  },
+  "ofcreserva": {
+    "brand_key": "ofcreserva",
+    "brand_name": "Oficina Reserva",
+    "domain": "www.oficina.com",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "domain_aliases": [
+      "oficina.com",
+      "www.oficina.com",
+      "oficinareserva.com",
+      "www.oficinareserva.com",
+      "secure.oficinareserva.com"
+    ],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Sem endpoint de reviews suportado.",
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": "",
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "hering": {
+    "brand_key": "hering",
+    "brand_name": "Hering",
+    "domain": "www.hering.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [
+      "PRODUTO BASE"
+    ],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Sem Trustvox store id e sem evidencia validada de endpoint VTEX Native de comentarios para esta marca.",
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/masculino/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/masculino/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/jaquetas-e-casacos",
+        "label": "Jaquetas e Casacos"
+      },
+      {
+        "canonical_slug": "moletom",
+        "vtex_fq_path": "/masculino/moletom",
+        "label": "Moletom"
+      },
+      {
+        "canonical_slug": "infantil",
+        "vtex_fq_path": "/kids",
+        "label": "Hering Kids"
+      },
+      {
+        "canonical_slug": "infantil-camisas",
+        "vtex_fq_path": "/kids/menino/camisas",
+        "label": "Hering Kids - Camisas"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/kids/menino/camisetas-e-regatas",
+        "label": "Hering Kids - Camisetas e Regatas"
+      },
+      {
+        "canonical_slug": "infantil-polos",
+        "vtex_fq_path": "/kids/menino/polos",
+        "label": "Hering Kids - Polos"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/kids/menino/calcas",
+        "label": "Hering Kids - Calças"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/kids/menino/shorts-e-bermudas",
+        "label": "Hering Kids - Bermudas e Shorts"
+      },
+      {
+        "canonical_slug": "infantil-jaquetas",
+        "vtex_fq_path": "/kids/menino/blusoes-e-moletons",
+        "label": "Hering Kids - Jaquetas e Casacos"
+      },
+      {
+        "canonical_slug": "infantil-moletons",
+        "vtex_fq_path": "/kids/menino/blusoes-e-moletons",
+        "label": "Hering Kids - Moletons"
+      },
+      {
+        "canonical_slug": "infantil-sungas",
+        "vtex_fq_path": "/kids/menino/sungas",
+        "label": "Hering Kids - Sungas"
+      },
+      {
+        "canonical_slug": "infantil-pijamas",
+        "vtex_fq_path": "/kids/menino/pijamas",
+        "label": "Hering Kids - Pijamas"
+      },
+      {
+        "canonical_slug": "infantil-blusas",
+        "vtex_fq_path": "/kids/menina/blusas",
+        "label": "Hering Kids - Blusas"
+      },
+      {
+        "canonical_slug": "infantil-vestidos",
+        "vtex_fq_path": "/kids/menina/vestidos",
+        "label": "Hering Kids - Vestidos"
+      },
+      {
+        "canonical_slug": "infantil-moda-praia",
+        "vtex_fq_path": "/kids/moda-praia",
+        "label": "Hering Kids - Moda Praia"
+      }
+    ],
+    "is_active": true
+  },
+  "levis": {
+    "brand_key": "levis",
+    "brand_name": "Levi's",
+    "domain": "www.levi.com.br",
+    "color_aliases": [
+      "Cor2"
+    ],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": true,
+    "review_provider": "yourviews",
+    "review_store_id": "9ca1b06f-2d54-4dc9-b9f0-a54df72b12e6",
+    "review_provider_evidence": "API pública YourViews /review/GetReview ativa e validada com storeKey e productId VTEX.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/masculino/roupas/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/roupas/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/masculino/roupas/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/roupas/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/roupas/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/roupas/jaquetas-e-casacos",
+        "label": "Jaquetas e casacos"
+      },
+      {
+        "canonical_slug": "infantil",
+        "vtex_fq_path": "/kids/menino",
+        "label": "Menino"
+      }
+    ],
+    "is_active": true
+  },
+  "calvinklein": {
+    "brand_key": "calvinklein",
+    "brand_name": "Calvin Klein",
+    "domain": "www.calvinklein.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": true,
+    "review_provider": "vtex_native",
+    "review_store_id": null,
+    "review_provider_evidence": "Endpoint REST público VTEX /reviews-and-ratings/api/reviews/ ativo e validado.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "vtex_sales_channel": "18",
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/roupas/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/masculino/roupas/camisetas---regatas",
+        "label": "Camisetas + Regatas"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/roupas/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/roupas/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/roupas/jaquetas---casacos",
+        "label": "Jaquetas + Casacos"
+      },
+      {
+        "canonical_slug": "jeans",
+        "vtex_fq_path": "/masculino/roupas/jeans",
+        "label": "Jeans"
+      },
+      {
+        "canonical_slug": "moletom",
+        "vtex_fq_path": "/masculino/roupas/moletons",
+        "label": "Moletons"
+      },
+      {
+        "canonical_slug": "blazers",
+        "vtex_fq_path": "/masculino/roupas/blazers---ternos",
+        "label": "Blazers + Ternos"
+      },
+      {
+        "canonical_slug": "shorts",
+        "vtex_fq_path": "/masculino/roupas/shorts",
+        "label": "Shorts"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/infantil/menino/roupas/bermudas-shorts",
+        "label": "Menino - Bermudas+Shorts"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/infantil/menino/roupas/camiseta-regatas",
+        "label": "Menino - Camiseta+Regatas"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/infantil/menino/roupas/calcas",
+        "label": "Menino - Calças"
+      },
+      {
+        "canonical_slug": "infantil-polos",
+        "vtex_fq_path": "/infantil/menino/roupas/polos",
+        "label": "Menino - Polos"
+      },
+      {
+        "canonical_slug": "infantil-jaquetas",
+        "vtex_fq_path": "/infantil/menino/roupas/jaquetas-casacos",
+        "label": "Menino - Jaquetas+Casacos"
+      }
+    ],
+    "is_active": true
+  },
+  "zapalla": {
+    "brand_key": "zapalla",
+    "brand_name": "Zapalla",
+    "domain": "www.zapalla.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Sem Trustvox store id e sem evidencia validada de endpoint VTEX Native de comentarios para esta marca.",
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/casacos",
+        "label": "Casacos"
+      },
+      {
+        "canonical_slug": "malhas",
+        "vtex_fq_path": "/malhas",
+        "label": "Malhas"
+      },
+      {
+        "canonical_slug": "calcados",
+        "vtex_fq_path": "/calcados-e-acessorios/calcados",
+        "label": "Calçados"
+      }
+    ],
+    "is_active": true
+  },
+  "austral": {
+    "brand_key": "austral",
+    "brand_name": "Austral",
+    "domain": "www.austral.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": true,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Sem Trustvox store id e sem evidencia validada de endpoint VTEX Native de comentarios para esta marca.",
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/masculino/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/masculino/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/casacos",
+        "label": "Casacos"
+      },
+      {
+        "canonical_slug": "overshirts",
+        "vtex_fq_path": "/masculino/overshirts",
+        "label": "Overshirts"
+      },
+      {
+        "canonical_slug": "tricots",
+        "vtex_fq_path": "/masculino/tricos",
+        "label": "Tricôs"
+      },
+      {
+        "canonical_slug": "calcados",
+        "vtex_fq_path": "/masculino/calcados",
+        "label": "Calçados"
+      }
+    ],
+    "is_active": true
+  },
+  "trackfield": {
+    "brand_key": "trackfield",
+    "brand_name": "Track & Field",
+    "domain": "www.tf.com.br",
+    "color_aliases": [
+      "CORES E ESTAMPAS"
+    ],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "vtex_native",
+    "review_store_id": null,
+    "review_provider_evidence": "Endpoint REST público VTEX /reviews-and-ratings/api/reviews/ ativo e validado.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/roupas-masculinas/polos",
+        "label": "POLOS"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/roupas-masculinas/camisetas",
+        "label": "CAMISETAS"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/roupas-masculinas/calcas",
+        "label": "CALÇAS"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/roupas-masculinas/shorts-e-bermudas",
+        "label": "SHORTS E BERMUDAS"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/roupas-masculinas/casacos-e-jaquetas",
+        "label": "CASACOS E JAQUETAS"
+      },
+      {
+        "canonical_slug": "regatas",
+        "vtex_fq_path": "/roupas-masculinas/regatas",
+        "label": "REGATAS"
+      },
+      {
+        "canonical_slug": "coletes",
+        "vtex_fq_path": "/roupas-masculinas/coletes",
+        "label": "COLETES"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/roupas-infantis/roupas-infantis-masculinas/camisetas",
+        "label": "Infantil Masc - Camisetas"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/roupas-infantis/roupas-infantis-masculinas/shorts-e-bermudas",
+        "label": "Infantil Masc - Shorts e Bermudas"
+      },
+      {
+        "canonical_slug": "infantil-jaquetas",
+        "vtex_fq_path": "/roupas-infantis/roupas-infantis-masculinas/casacos-e-jaquetas",
+        "label": "Infantil Masc - Casacos e Jaquetas"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/roupas-infantis/roupas-infantis-masculinas/calcas",
+        "label": "Infantil Masc - Calças"
+      }
+    ],
+    "is_active": true
+  },
+  "richards": {
+    "brand_key": "richards",
+    "brand_name": "Richards",
+    "domain": "www.richards.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "vurdere",
+    "review_store_id": "richards",
+    "review_provider_evidence": "Plataforma Vurdere AI ativa em richards-br.mais.social com endpoints de reviews e rating validados.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "engine": "wake",
+    "logo_url": null,
+    "wake_access_token": "tcs_richa_35674061aaa44bc8ae2259bd37b4ae03",
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "acessorios",
+        "vtex_fq_path": "/masculino/acessorios",
+        "label": "Masculino - Acessórios"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/bermudas",
+        "label": "Masculino - Bermudas"
+      },
+      {
+        "canonical_slug": "blazers",
+        "vtex_fq_path": "/masculino/blazers",
+        "label": "Masculino - Blazers"
+      },
+      {
+        "canonical_slug": "calcados",
+        "vtex_fq_path": "/masculino/calcados",
+        "label": "Masculino - Calçados"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/calcas",
+        "label": "Masculino - Calças"
+      },
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/masculino/camisas",
+        "label": "Masculino - Camisas"
+      },
+      {
+        "canonical_slug": "intimo",
+        "vtex_fq_path": "/masculino/intimo",
+        "label": "Masculino - Íntimo"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/jaquetas",
+        "label": "Masculino - Jaquetas"
+      },
+      {
+        "canonical_slug": "moletom",
+        "vtex_fq_path": "/masculino/moletons",
+        "label": "Masculino - Moletom"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/polos",
+        "label": "Masculino - Polos"
+      },
+      {
+        "canonical_slug": "praia",
+        "vtex_fq_path": "/masculino/praia",
+        "label": "Masculino - Praia"
+      },
+      {
+        "canonical_slug": "shorts",
+        "vtex_fq_path": "/masculino/shorts",
+        "label": "Masculino - Shorts"
+      },
+      {
+        "canonical_slug": "t-shirts",
+        "vtex_fq_path": "/masculino/t-shirts",
+        "label": "Masculino - T-Shirts"
+      },
+      {
+        "canonical_slug": "tricos-e-blusas",
+        "vtex_fq_path": "/masculino/tricots-e-blusas",
+        "label": "Masculino - Tricos e Blusas"
+      },
+      {
+        "canonical_slug": "outlet",
+        "vtex_fq_path": "/sale/masculino",
+        "label": "Masculino - Outlet"
+      }
+    ],
+    "is_active": true
+  },
+  "lacoste": {
+    "brand_key": "lacoste",
+    "brand_name": "Lacoste",
+    "domain": "lacoste.com.br",
+    "banner_start_url": "https://www.lacoste.com/br/",
+    "color_aliases": [],
+    "size_aliases": [],
+    "domain_aliases": [
+      "lacoste.com",
+      "www.lacoste.com",
+      "lacoste.com.br",
+      "www.lacoste.com.br"
+    ],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Engine SFCC sem provider de comentarios suportado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "algolia",
+    "algolia_app_id": "CU0IYSHI42",
+    "algolia_api_key": "7e20c005d05fe8f113d8b7e079bf34a1",
+    "algolia_index": "products_br_pt",
+    "algolia_origin": "https://www.lacoste.com",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": "https://www.lacoste.com/br/search?q={query}",
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "infantil",
+        "vtex_fq_path": "/br/infantil.html",
+        "label": "Lacoste Infantil"
+      },
+      {
+        "canonical_slug": "infantil-polos",
+        "vtex_fq_path": "/br/lacoste/infantil/polos/",
+        "label": "Lacoste Infantil - Polos"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/br/lacoste/infantil/camisetas/",
+        "label": "Lacoste Infantil - Camisetas"
+      },
+      {
+        "canonical_slug": "infantil-moletons",
+        "vtex_fq_path": "/br/lacoste/infantil/moletom/",
+        "label": "Lacoste Infantil - Moletons"
+      },
+      {
+        "canonical_slug": "infantil-jaquetas",
+        "vtex_fq_path": "/br/lacoste/infantil/moletom/",
+        "label": "Lacoste Infantil - Jaquetas & Casacos"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/br/lacoste/infantil/calcas/",
+        "label": "Lacoste Infantil - Calças"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/br/lacoste/infantil/bermudas/",
+        "label": "Lacoste Infantil - Bermudas"
+      },
+      {
+        "canonical_slug": "infantil-calcados",
+        "vtex_fq_path": "/br/lacoste/infantil/calcados/",
+        "label": "Lacoste Infantil - Calçados"
+      },
+      {
+        "canonical_slug": "infantil-acessorios",
+        "vtex_fq_path": "/br/lacoste/infantil/acessorios/",
+        "label": "Lacoste Infantil - Acessórios"
+      }
+    ],
+    "is_active": true
+  },
+  "hugoboss": {
+    "brand_key": "hugoboss",
+    "brand_name": "Hugo Boss",
+    "domain": "www.hugoboss.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "vtex_native",
+    "review_store_id": null,
+    "review_provider_evidence": "Endpoint REST público VTEX /reviews-and-ratings/api/reviews/ ativo e validado.",
+    "review_unsupported_reason": null,
+    "vtex_account": null,
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/masculino/roupas/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/roupas/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/masculino/roupas/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/roupas/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/roupas/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/roupas/jaquetas",
+        "label": "Jaquetas"
+      },
+      {
+        "canonical_slug": "malhas",
+        "vtex_fq_path": "/masculino/roupas/malhas-e-tricos",
+        "label": "Malhas e Tricôs"
+      },
+      {
+        "canonical_slug": "moletom",
+        "vtex_fq_path": "/masculino/roupas/moletons",
+        "label": "Moletons"
+      },
+      {
+        "canonical_slug": "jeans",
+        "vtex_fq_path": "/masculino/roupas/jeans",
+        "label": "Jeans"
+      },
+      {
+        "canonical_slug": "casacos",
+        "vtex_fq_path": "/masculino/roupas/casacos",
+        "label": "Casacos"
+      },
+      {
+        "canonical_slug": "blazers",
+        "vtex_fq_path": "/masculino/roupas/blazers",
+        "label": "Blazers"
+      },
+      {
+        "canonical_slug": "ternos",
+        "vtex_fq_path": "/masculino/roupas/ternos",
+        "label": "Ternos"
+      },
+      {
+        "canonical_slug": "calcados",
+        "vtex_fq_path": "/masculino/calcados",
+        "label": "Calçados"
+      },
+      {
+        "canonical_slug": "infantil",
+        "vtex_fq_path": "/kids/menino",
+        "label": "Menino"
+      }
+    ],
+    "is_active": true
+  },
+  "mercado_livre": {
+    "brand_key": "mercado_livre",
+    "brand_name": "Mercado Livre",
+    "domain": "mercadolivre.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Marketplace virtual sem provider de comentarios integrado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "mercadolivre",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true,
+    "domain_aliases": [
+      "mercadolivre.com.br",
+      "www.mercadolivre.com.br",
+      "produto.mercadolivre.com.br"
+    ]
+  },
+  "netshoes": {
+    "brand_key": "netshoes",
+    "brand_name": "Netshoes",
+    "domain": "netshoes.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Marketplace virtual sem provider de comentarios integrado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "netshoes",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "amazon": {
+    "brand_key": "amazon",
+    "brand_name": "Amazon",
+    "domain": "amazon.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Marketplace virtual sem provider de comentarios integrado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "amazon",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "zara": {
+    "brand_key": "zara",
+    "brand_name": "Zara",
+    "domain": "www.zara.com",
+    "banner_start_url": "https://www.zara.com/br/pt/",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "domain_aliases": [
+      "zara.com",
+      "www.zara.com",
+      "kids.zara.com"
+    ],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Engine Zara sem provider de comentarios suportado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "zara",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": "https://www.zara.com/br/pt/search?searchTerm={query}&section=MAN",
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "todos-os-produtos",
+        "vtex_fq_path": "/br/pt/homem-todos-os-produtos-l7465.html",
+        "label": "Todos os Produtos"
+      },
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/br/pt/man-shirts-l737.html",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/br/pt/man-polos-l733.html",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/br/pt/man-tshirts-l855.html",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/br/pt/man-trousers-l838.html",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "jeans",
+        "vtex_fq_path": "/br/pt/man-jeans-l659.html",
+        "label": "Jeans"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/br/pt/man-bermudas-l592.html",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/br/pt/man-jackets-l640.html",
+        "label": "Jaquetas"
+      },
+      {
+        "canonical_slug": "sobrecamisas",
+        "vtex_fq_path": "/br/pt/man-overshirts-l3174.html",
+        "label": "Sobrecamisas"
+      },
+      {
+        "canonical_slug": "blazers",
+        "vtex_fq_path": "/br/pt/man-blazers-l608.html",
+        "label": "Blazers"
+      },
+      {
+        "canonical_slug": "malhas",
+        "vtex_fq_path": "/br/pt/man-knitwear-l681.html",
+        "label": "Malhas"
+      },
+      {
+        "canonical_slug": "moletons",
+        "vtex_fq_path": "/br/pt/man-sweatshirts-l821.html",
+        "label": "Moletons"
+      },
+      {
+        "canonical_slug": "ternos",
+        "vtex_fq_path": "/br/pt/man-suits-l808.html",
+        "label": "Ternos"
+      },
+      {
+        "canonical_slug": "casacos-sobretudos",
+        "vtex_fq_path": "/br/pt/man-outerwear-l715.html",
+        "label": "Casacos e Sobretudos"
+      },
+      {
+        "canonical_slug": "sapatos",
+        "vtex_fq_path": "/br/pt/man-shoes-l769.html",
+        "label": "Sapatos"
+      },
+      {
+        "canonical_slug": "bolsas",
+        "vtex_fq_path": "/br/pt/man-bags-l563.html",
+        "label": "Bolsas"
+      },
+      {
+        "canonical_slug": "acessorios",
+        "vtex_fq_path": "/br/pt/man-accessories-l537.html",
+        "label": "Acessórios"
+      },
+      {
+        "canonical_slug": "perfumes",
+        "vtex_fq_path": "/br/pt/man-accessories-perfumes-l551.html",
+        "label": "Perfumes"
+      },
+      {
+        "canonical_slug": "basicos",
+        "vtex_fq_path": "/br/pt/man-basics-l587.html",
+        "label": "Básicos"
+      },
+      {
+        "canonical_slug": "novidades",
+        "vtex_fq_path": "/br/pt/man-new-in-l711.html",
+        "label": "Novidades"
+      },
+      {
+        "canonical_slug": "infantil-todos-os-produtos",
+        "vtex_fq_path": "/br/pt/kids-boy-l173.html",
+        "label": "Menino 6-14 - Todos os Produtos"
+      },
+      {
+        "canonical_slug": "infantil-camisas",
+        "vtex_fq_path": "/br/pt/kids-boy-shirts-l239.html",
+        "label": "Menino 6-14 - Camisas"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/br/pt/kids-boy-tshirts-l286.html",
+        "label": "Menino 6-14 - Camisetas"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/br/pt/kids-boy-trousers-l274.html",
+        "label": "Menino 6-14 - Calças"
+      },
+      {
+        "canonical_slug": "infantil-jeans",
+        "vtex_fq_path": "/br/pt/kids-boy-jeans-l218.html",
+        "label": "Menino 6-14 - Jeans"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/br/pt/kids-boy-bermudas-l203.html",
+        "label": "Menino 6-14 - Bermudas"
+      },
+      {
+        "canonical_slug": "infantil-malhas",
+        "vtex_fq_path": "/br/pt/kids-boy-knitwear-l223.html",
+        "label": "Menino 6-14 - Malhas"
+      },
+      {
+        "canonical_slug": "infantil-moletons",
+        "vtex_fq_path": "/br/pt/kids-boy-sweatshirts-l267.html",
+        "label": "Menino 6-14 - Moletons"
+      },
+      {
+        "canonical_slug": "infantil-casacos",
+        "vtex_fq_path": "/br/pt/kids-boy-outerwear-l231.html",
+        "label": "Menino 6-14 - Casacos"
+      },
+      {
+        "canonical_slug": "infantil-conjuntos",
+        "vtex_fq_path": "/br/pt/kids-boy-special-sets-l8229.html",
+        "label": "Menino 6-14 - Conjuntos"
+      },
+      {
+        "canonical_slug": "infantil-sapatos",
+        "vtex_fq_path": "/br/pt/kids-boy-shoes-l241.html",
+        "label": "Menino 6-14 - Sapatos"
+      },
+      {
+        "canonical_slug": "infantil-mochilas",
+        "vtex_fq_path": "/br/pt/kids-boy-backpacks-l197.html",
+        "label": "Menino 6-14 - Mochilas"
+      },
+      {
+        "canonical_slug": "infantil-acessorios",
+        "vtex_fq_path": "/br/pt/kids-boy-accessories-l176.html",
+        "label": "Menino 6-14 - Acessórios"
+      },
+      {
+        "canonical_slug": "infantil-pijamas",
+        "vtex_fq_path": "/br/pt/kids-boy-pyjamas-l6740.html",
+        "label": "Menino 6-14 - Pijamas"
+      },
+      {
+        "canonical_slug": "infantil-novidades",
+        "vtex_fq_path": "/br/pt/kids-boy-new-in-l228.html",
+        "label": "Menino 6-14 - Novidades"
+      }
+    ],
+    "is_active": true,
+    "domain_aliases": [
+      "zara.com",
+      "www.zara.com",
+      "zara.com.br",
+      "www.zara.com.br"
+    ]
+  },
+  "dafiti": {
+    "brand_key": "dafiti",
+    "brand_name": "Dafiti",
+    "domain": "www.dafiti.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Marketplace virtual sem provider de comentarios integrado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "dafiti",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": "https://www.dafiti.com.br/catalog/?q={query}&gender=masculino",
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "privalia": {
+    "brand_key": "privalia",
+    "brand_name": "Privalia",
+    "domain": "brandsplace.privalia.com",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Marketplace virtual sem provider de comentarios integrado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": "privalia",
+    "engine": "privalia",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": "https://brandsplace.privalia.com/api/catalog_system/pub/products/search?ft={query}&fq=C:2040",
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [],
+    "is_active": true
+  },
+  "brooksfield": {
+    "brand_key": "brooksfield",
+    "brand_name": "Brooksfield",
+    "domain": "www.brooksfield.com.br",
+    "junior_domain": "www.brooksfieldjunior.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "domain_aliases": [
+      "brooksfield.com.br",
+      "www.brooksfield.com.br",
+      "brooksfieldjunior.com.br",
+      "www.brooksfieldjunior.com.br"
+    ],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Avaliações internas Linx sem provider externo integrado.",
+    "vtex_account": null,
+    "engine": "linx",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": "https://www.brooksfield.com.br/pesquisa?t={query}",
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/adulto/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/adulto/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/adulto/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/adulto/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "calcas-jeans",
+        "vtex_fq_path": "/adulto/calca-jeans",
+        "label": "Calças Jeans"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/adulto/bermudas-e-shorts",
+        "label": "Bermudas e Shorts"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/adulto/jaquetas",
+        "label": "Jaquetas e Casacos"
+      },
+      {
+        "canonical_slug": "tricots",
+        "vtex_fq_path": "/adulto/malhas-blusoes",
+        "label": "Malhas e Blusões (Tricots)"
+      },
+      {
+        "canonical_slug": "pijamas",
+        "vtex_fq_path": "/adulto/pijamas",
+        "label": "Pijamas"
+      },
+      {
+        "canonical_slug": "sobretudo",
+        "vtex_fq_path": "/adulto/sobretudo",
+        "label": "Sobretudo"
+      },
+      {
+        "canonical_slug": "alfaiataria",
+        "vtex_fq_path": "/alfaiataria",
+        "label": "Alfaiataria (Geral)"
+      },
+      {
+        "canonical_slug": "camisa-social",
+        "vtex_fq_path": "/alfaiataria/camisa-social",
+        "label": "Camisa Social"
+      },
+      {
+        "canonical_slug": "calca-social",
+        "vtex_fq_path": "/alfaiataria/calca-social",
+        "label": "Calça Social"
+      },
+      {
+        "canonical_slug": "paletos",
+        "vtex_fq_path": "/alfaiataria/paletos",
+        "label": "Paletós"
+      },
+      {
+        "canonical_slug": "ternos",
+        "vtex_fq_path": "/alfaiataria/ternos",
+        "label": "Ternos"
+      },
+      {
+        "canonical_slug": "calcados",
+        "vtex_fq_path": "/calcados",
+        "label": "Calçados (Geral)"
+      },
+      {
+        "canonical_slug": "calcados-tenis",
+        "vtex_fq_path": "/calcados/tenis",
+        "label": "Calçados - Tênis"
+      },
+      {
+        "canonical_slug": "calcados-sapato-social",
+        "vtex_fq_path": "/calcados/sapato-social",
+        "label": "Calçados - Sapato Social"
+      },
+      {
+        "canonical_slug": "calcados-mocassim",
+        "vtex_fq_path": "/calcados/sapato-mocassim",
+        "label": "Calçados - Mocassim"
+      },
+      {
+        "canonical_slug": "calcados-sider",
+        "vtex_fq_path": "/calcados/sider",
+        "label": "Calçados - Sider"
+      },
+      {
+        "canonical_slug": "calcados-bota",
+        "vtex_fq_path": "/calcados/bota",
+        "label": "Calçados - Botas"
+      },
+      {
+        "canonical_slug": "calcados-chinelo",
+        "vtex_fq_path": "/calcados/chinelo",
+        "label": "Calçados - Chinelos"
+      },
+      {
+        "canonical_slug": "acessorios",
+        "vtex_fq_path": "/acessorios",
+        "label": "Acessórios (Geral)"
+      },
+      {
+        "canonical_slug": "acessorios-cinto",
+        "vtex_fq_path": "/acessorios/cinto",
+        "label": "Acessórios - Cintos"
+      },
+      {
+        "canonical_slug": "acessorios-carteira",
+        "vtex_fq_path": "/acessorios/carteira",
+        "label": "Acessórios - Carteiras"
+      },
+      {
+        "canonical_slug": "acessorios-gravata",
+        "vtex_fq_path": "/acessorios/gravata",
+        "label": "Acessórios - Gravatas"
+      },
+      {
+        "canonical_slug": "acessorios-bone",
+        "vtex_fq_path": "/acessorios/bone",
+        "label": "Acessórios - Bonés"
+      },
+      {
+        "canonical_slug": "acessorios-meia",
+        "vtex_fq_path": "/acessorios/meia",
+        "label": "Acessórios - Meias"
+      },
+      {
+        "canonical_slug": "acessorios-cueca",
+        "vtex_fq_path": "/acessorios/cueca",
+        "label": "Acessórios - Cuecas"
+      },
+      {
+        "canonical_slug": "acessorios-perfume",
+        "vtex_fq_path": "/acessorios/perfume",
+        "label": "Acessórios - Perfumes"
+      },
+      {
+        "canonical_slug": "acessorios-necessaire",
+        "vtex_fq_path": "/acessorios/necessaire",
+        "label": "Acessórios - Necessaires"
+      },
+      {
+        "canonical_slug": "acessorios-malas-bolsas",
+        "vtex_fq_path": "/acessorios/malas-e-bolsas",
+        "label": "Acessórios - Malas e Bolsas"
+      },
+      {
+        "canonical_slug": "infantil-camisas",
+        "vtex_fq_path": "/junior/camisas-jr",
+        "label": "Infantil - Camisas"
+      },
+      {
+        "canonical_slug": "infantil-camisetas",
+        "vtex_fq_path": "/junior/camisetas-jr",
+        "label": "Infantil - Camisetas"
+      },
+      {
+        "canonical_slug": "infantil-polos",
+        "vtex_fq_path": "/junior/polos-jr",
+        "label": "Infantil - Polos"
+      },
+      {
+        "canonical_slug": "infantil-calcas",
+        "vtex_fq_path": "/junior/calcas-jr",
+        "label": "Infantil - Calças"
+      },
+      {
+        "canonical_slug": "infantil-bermudas",
+        "vtex_fq_path": "/junior/bermuda-e-shorts-jr",
+        "label": "Infantil - Bermudas e Shorts"
+      },
+      {
+        "canonical_slug": "infantil-jaquetas",
+        "vtex_fq_path": "/junior/moletons-e-jaquetas-jr",
+        "label": "Infantil - Moletons e Jaquetas"
+      },
+      {
+        "canonical_slug": "infantil-pijamas",
+        "vtex_fq_path": "/junior/pijamas-jr",
+        "label": "Infantil - Pijamas"
+      },
+      {
+        "canonical_slug": "infantil-alfaiataria",
+        "vtex_fq_path": "/junior/alfaiataria-jr",
+        "label": "Infantil - Alfaiataria (Geral)"
+      },
+      {
+        "canonical_slug": "infantil-camisa-social",
+        "vtex_fq_path": "/junior/alfaiataria-jr/camisa-social",
+        "label": "Infantil - Camisa Social"
+      },
+      {
+        "canonical_slug": "infantil-paletos",
+        "vtex_fq_path": "/junior/alfaiataria-jr/paletos",
+        "label": "Infantil - Paletós"
+      },
+      {
+        "canonical_slug": "infantil-ternos",
+        "vtex_fq_path": "/junior/alfaiataria-jr/ternos",
+        "label": "Infantil - Ternos"
+      },
+      {
+        "canonical_slug": "infantil-gravata",
+        "vtex_fq_path": "/junior/alfaiataria-jr/gravata",
+        "label": "Infantil - Gravatas"
+      },
+      {
+        "canonical_slug": "infantil-calcados-tenis",
+        "vtex_fq_path": "/junior/calcados-jr/tenis-jr",
+        "label": "Infantil - Tênis"
+      },
+      {
+        "canonical_slug": "infantil-acessorios",
+        "vtex_fq_path": "/junior/acessorios-jr",
+        "label": "Infantil - Acessórios (Geral)"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-cinto",
+        "vtex_fq_path": "/junior/acessorios-jr/cinto",
+        "label": "Infantil - Cintos"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-bone",
+        "vtex_fq_path": "/junior/acessorios-jr/bone",
+        "label": "Infantil - Bonés"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-cueca",
+        "vtex_fq_path": "/junior/acessorios-jr/cueca",
+        "label": "Infantil - Cuecas"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-meia",
+        "vtex_fq_path": "/junior/acessorios-jr/meia",
+        "label": "Infantil - Meias"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-sunga",
+        "vtex_fq_path": "/junior/acessorios-jr/sunga",
+        "label": "Infantil - Sungas"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-perfume",
+        "vtex_fq_path": "/junior/acessorios-jr/perfume",
+        "label": "Infantil - Perfumes"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-malas-bolsas",
+        "vtex_fq_path": "/junior/acessorios-jr/malas-e-bolsas",
+        "label": "Infantil - Malas e Bolsas"
+      },
+      {
+        "canonical_slug": "infantil-acessorios-necessaire",
+        "vtex_fq_path": "/junior/acessorios-jr/necessaire",
+        "label": "Infantil - Necessaires"
+      }
+    ],
+    "is_active": true
+  },
+  "guess": {
+    "brand_key": "guess",
+    "brand_name": "Guess Brasil",
+    "domain": "www.guessbrasil.com.br",
+    "banner_start_url": "https://www.guessbrasil.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": true,
+    "review_provider": "vtex_native",
+    "review_store_id": null,
+    "review_provider_evidence": "Endpoint REST público VTEX /reviews-and-ratings/api/reviews/ ativo e validado.",
+    "review_unsupported_reason": null,
+    "vtex_account": "guessbr",
+    "engine": "vtex",
+    "logo_url": null,
+    "wake_access_token": null,
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/masculino/roupas/camisas",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/masculino/roupas/camisetas",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/masculino/roupas/polos",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/masculino/roupas/calcas",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "calcas-jeans",
+        "vtex_fq_path": "/masculino/roupas/calcas-jeans",
+        "label": "Calças Jeans"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/masculino/roupas/bermudas",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/masculino/roupas/casacos-e-jaquetas",
+        "label": "Jaquetas e Casacos"
+      },
+      {
+        "canonical_slug": "moletom",
+        "vtex_fq_path": "/masculino/roupas/moletons",
+        "label": "Moletons"
+      },
+      {
+        "canonical_slug": "tricots",
+        "vtex_fq_path": "/masculino/roupas/tricots-e-sueteres",
+        "label": "Tricots e Suéteres"
+      },
+      {
+        "canonical_slug": "intimo",
+        "vtex_fq_path": "/masculino/underwear",
+        "label": "Underwear"
+      },
+      {
+        "canonical_slug": "acessorios",
+        "vtex_fq_path": "/masculino/acessorios",
+        "label": "Acessórios"
+      },
+      {
+        "canonical_slug": "outlet",
+        "vtex_fq_path": "/masculino/roupas/sale",
+        "label": "Sale Masculino"
+      }
+    ],
+    "is_active": true
+  },
+  "oriba": {
+    "brand_key": "oriba",
+    "brand_name": "Oriba",
+    "domain": "www.oriba.com.br",
+    "banner_start_url": "https://www.oriba.com.br",
+    "color_aliases": [],
+    "size_aliases": [],
+    "family_aliases": [],
+    "extract_via_regex": false,
+    "review_provider": "none",
+    "review_store_id": null,
+    "review_provider_evidence": null,
+    "review_unsupported_reason": "Engine Wake sem provider de comentarios suportado neste projeto; sem Trustvox store id validado.",
+    "vtex_account": null,
+    "engine": "wake",
+    "logo_url": null,
+    "wake_access_token": "tcs_oriba_65e6e326cbcb4419b4fbc80a1028babf",
+    "search_url_template": null,
+    "proxy_url": null,
+    "promotion_probes": [],
+    "mappings": [
+      {
+        "canonical_slug": "camisas",
+        "vtex_fq_path": "/camisa",
+        "label": "Camisas"
+      },
+      {
+        "canonical_slug": "camisetas",
+        "vtex_fq_path": "/camiseta",
+        "label": "Camisetas"
+      },
+      {
+        "canonical_slug": "polos",
+        "vtex_fq_path": "/camisa-polo-masculina",
+        "label": "Polos"
+      },
+      {
+        "canonical_slug": "calcas",
+        "vtex_fq_path": "/calca",
+        "label": "Calças"
+      },
+      {
+        "canonical_slug": "bermudas",
+        "vtex_fq_path": "/bermuda",
+        "label": "Bermudas"
+      },
+      {
+        "canonical_slug": "jaquetas",
+        "vtex_fq_path": "/blusas-e-jaquetas",
+        "label": "Blusas e Jaquetas"
+      },
+      {
+        "canonical_slug": "alfaiataria",
+        "vtex_fq_path": "/alfaiataria-masculina",
+        "label": "Alfaiataria"
+      },
+      {
+        "canonical_slug": "intimo",
+        "vtex_fq_path": "/colecao/underwear",
+        "label": "Cuecas"
+      },
+      {
+        "canonical_slug": "acessorios",
+        "vtex_fq_path": "/acessorios",
+        "label": "Acessórios"
+      },
+      {
+        "canonical_slug": "outlet",
+        "vtex_fq_path": "/por-menos",
+        "label": "Por Menos"
+      }
+    ],
+    "is_active": true
+  }
+}

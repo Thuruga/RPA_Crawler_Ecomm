@@ -1,0 +1,7 @@
+{
+  "id": 10001,
+  "title": "Camiseta Essencial",
+  "handle": "camiseta-essencial",
+  "variants": [{"id": 20001, "price": 12900, "compare_at_price": 14900, "available": true}],
+  "tags": ["10% no Pix"]
+}

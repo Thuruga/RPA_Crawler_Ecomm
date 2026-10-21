@@ -1,0 +1,202 @@
+{
+  "brand_key": "richards",
+  "domain": "www.richards.com.br",
+  "decision": "GO",
+  "observed_at": "2026-07-10T20:00:14Z",
+  "source": {
+    "source_url": "https://www.richards.com.br/",
+    "method": "GET homepage HTML (server-rendered, no JS execution needed) via aiohttp/urllib with a standard desktop User-Agent",
+    "selector": "nav#navbar a[href] -- anchors whose href starts with '/masculino/' (plus the sibling '/sale/masculino' Outlet link) located inside the top-level 'Masculino' mega-menu section of the single <nav id=navbar> element",
+    "extraction_note": "Category links are present verbatim in the initial server-rendered HTML response (confirmed: regex over the <nav>...</nav> block finds 295 anchors including all masculino/* category hrefs) -- no browser/JS rendering was required to enumerate them, though a browser fetch would find the same nav markup.",
+    "html_length_bytes": 242093,
+    "home_html_sha256": "43cd883c4807d408d83cebd801de7b6cc0c79957ec5399c5804e7a80675e0ab0",
+    "nav_block_length_bytes": 117849,
+    "nav_block_sha256": "206c356bbb7edc97c0c5096123184e4b14e2d7c7cac6add7f66bb575cd8da82f",
+    "evidence_snippet": "<li class=\"w-full px-4 bg-menu-mobile brandon-grotesque\"><a href=/masculino/camisas class=\"block py-3 text-sm text-neutral-bold font-medium brandon-grotesque\">Camisas</a></li>"
+  },
+  "graphql_probe": {
+    "endpoint": "https://storefront-api.fbits.net/graphql",
+    "query_name": "WakeHotsite",
+    "variables_template": {
+      "url": "<path>",
+      "first": 1
+    },
+    "token_resolution": "storefrontAccessToken auto-extracted via regex from the same homepage HTML fetched above (same mechanism as WakeEngine._resolve_token step 3)",
+    "control_checks": [
+      {
+        "path": "/masculino/categoria-inexistente-xyz-999",
+        "http_status": 200,
+        "response": {
+          "data": {
+            "hotsite": null
+          }
+        },
+        "classification": "confirms hotsite(url:) returns null (not an error, not a false has_products) for a path that is not a real Wake hotsite -- proves the probe does not default to true"
+      },
+      {
+        "path": "/feminino/vestidos",
+        "http_status": 200,
+        "classification": "has_products (real feminine hotsite with real edges) -- proves the probe genuinely executes against live data and is not hardcoded; this path is correctly excluded downstream by the D-02/D-06 scope policy (feminine marker), not by the probe itself"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "order": 0,
+      "name": "Acessórios",
+      "path": "/masculino/acessorios",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Cinto Pine Regal Rch Cafe"
+    },
+    {
+      "order": 1,
+      "name": "Bermudas",
+      "path": "/masculino/bermudas",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Bermuda Chino Vmp Pd Classic Silver"
+    },
+    {
+      "order": 2,
+      "name": "Blazers",
+      "path": "/masculino/blazers",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Blazer Wool Blend Dark Navy"
+    },
+    {
+      "order": 3,
+      "name": "Calçados",
+      "path": "/masculino/calcados",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Tenis Drake Rch Off White"
+    },
+    {
+      "order": 4,
+      "name": "Calças",
+      "path": "/masculino/calcas",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Calça Pv Classic Dark Navy"
+    },
+    {
+      "order": 5,
+      "name": "Camisas",
+      "path": "/masculino/camisas",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Camisa Flanela  Gérson Verde Escuro"
+    },
+    {
+      "order": 6,
+      "name": "Íntimo",
+      "path": "/masculino/intimo",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Meia Eclat Rch Branco"
+    },
+    {
+      "order": 7,
+      "name": "Jaquetas",
+      "path": "/masculino/jaquetas",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Jaqueta River Nylon Dark Navy"
+    },
+    {
+      "order": 8,
+      "name": "Moletom",
+      "path": "/masculino/moletons",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Blusao Liso Bello Telha"
+    },
+    {
+      "order": 9,
+      "name": "Polos",
+      "path": "/masculino/polos",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Polo Texture Tech Mc Basic Fit Preto"
+    },
+    {
+      "order": 10,
+      "name": "Praia",
+      "path": "/masculino/praia",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Sunga Classic Bicolor Grafite"
+    },
+    {
+      "order": 11,
+      "name": "Shorts",
+      "path": "/masculino/shorts",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Beach Short Florish Regular Azul Bic"
+    },
+    {
+      "order": 12,
+      "name": "T-Shirts",
+      "path": "/masculino/t-shirts",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=T-Shirt Piquet Linen Premium Natural"
+    },
+    {
+      "order": 13,
+      "name": "Tricots e Blusas",
+      "path": "/masculino/tricots-e-blusas",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Tricot Heavy Gola Normal Azul"
+    },
+    {
+      "order": 14,
+      "name": "Outlet",
+      "path": "/sale/masculino",
+      "ancestors": [
+        "Masculino"
+      ],
+      "probe_status": "has_products",
+      "probe_detail": "sample=Jaqueta Puffer Bolso Invisivel Bamboo"
+    }
+  ],
+  "summary": {
+    "total_candidates": 15,
+    "has_products": 15,
+    "empty": 0,
+    "blocked": 0
+  },
+  "rationale": "GO: the live Richards (Wake) homepage exposes a real, reproducible, server-rendered navigation with an explicit 'Masculino' section containing 15 real category hrefs (14 sub-categories + 1 Outlet link), independently reproducible via a plain HTTP GET (no authentication, no browser needed). Every one of the 15 enumerated paths returned a real GraphQL hotsite(url:) response with first:1 has_products=true (a genuine product sample was returned for each). Two control probes (a fabricated nonexistent path -> hotsite:null, and the real feminino/vestidos hotsite -> has_products) prove the probe mechanism is discriminating and not defaulting to a permissive true. Per D-05, this fixture supersedes the stale brand.mappings entries persisted in backend/data/brands.json for richards (which used incorrect paths missing the '/masculino' prefix, e.g. '/camisas' instead of the real '/masculino/camisas', and a wrong slug 'tricot' instead of the real 'tricots-e-blusas') -- those stale mappings are NOT used as the discovery source in WakeEngine.discover_categories()/get_catalog() after this plan."
+}

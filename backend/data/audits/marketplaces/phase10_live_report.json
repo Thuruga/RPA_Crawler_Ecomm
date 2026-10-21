@@ -1,0 +1,1867 @@
+{
+  "audit_id": "2026-08-24T163122+0000",
+  "commands": [
+    "python scripts/audit_marketplaces_live.py --live --profiles current,coherent_http --marketplaces amazon,mercado_livre,netshoes --journeys search,pdp,shipping --manifest data\\audits\\marketplaces\\acceptance_manifest.json --freight-matrix data\\audits\\marketplaces\\freight_acceptance_matrix.json --max-external-calls 36 --output data\\audits\\marketplaces --phase-report-output ..\\.planning\\phases\\10-verifica-o-operacional-de-ponta-a-ponta"
+  ],
+  "evidence": {
+    "durable_jobs": null,
+    "frontend_reconnect": null
+  },
+  "fingerprint": "chrome120-windows",
+  "freight_gate": {
+    "passed": false,
+    "rejections": [
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "amazon",
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "mercado_livre",
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "unsupported_supported_integration",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "netshoes",
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "reason": "invalid_money",
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "shopify",
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "temporary_failure_state",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "invalid_money",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "temporary_failure_state",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "invalid_money",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "temporary_failure_state",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "invalid_money",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "temporary_failure_state",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "invalid_money",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "temporary_failure_state",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "vtex",
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "reason": "invalid_money",
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "error_state",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "integration": "wake",
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "reason": "invalid_money",
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      }
+    ],
+    "rows": [
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "amazon",
+        "is_free_shipping": false,
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "amazon",
+        "is_free_shipping": false,
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "amazon",
+        "is_free_shipping": false,
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "amazon",
+        "is_free_shipping": false,
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "amazon",
+        "is_free_shipping": false,
+        "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "mercado_livre",
+        "is_free_shipping": false,
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "mercado_livre",
+        "is_free_shipping": false,
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "mercado_livre",
+        "is_free_shipping": false,
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "mercado_livre",
+        "is_free_shipping": false,
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "mercado_livre",
+        "is_free_shipping": false,
+        "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "netshoes",
+        "is_free_shipping": false,
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "netshoes",
+        "is_free_shipping": false,
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "netshoes",
+        "is_free_shipping": false,
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "netshoes",
+        "is_free_shipping": false,
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "netshoes",
+        "is_free_shipping": false,
+        "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040",
+        "shipping_price": null,
+        "state": "unsupported",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "shopify",
+        "is_free_shipping": false,
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "shopify",
+        "is_free_shipping": false,
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "shopify",
+        "is_free_shipping": false,
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "shopify",
+        "is_free_shipping": false,
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "shopify",
+        "is_free_shipping": false,
+        "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "reason": "no_options",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "vtex",
+        "is_free_shipping": false,
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "shipping_price": null,
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "reason": "no_options",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "vtex",
+        "is_free_shipping": false,
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "shipping_price": null,
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "reason": "no_options",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "vtex",
+        "is_free_shipping": false,
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "shipping_price": null,
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "reason": "no_options",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "vtex",
+        "is_free_shipping": false,
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "shipping_price": null,
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "reason": "no_options",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "vtex",
+        "is_free_shipping": false,
+        "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p",
+        "shipping_price": null,
+        "state": "temporary_failure",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "wake",
+        "is_free_shipping": false,
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "wake",
+        "is_free_shipping": false,
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "wake",
+        "is_free_shipping": false,
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "wake",
+        "is_free_shipping": false,
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      },
+      {
+        "evidence": {
+          "error": "'NoneType' object has no attribute 'lower'",
+          "source_endpoint": "audit_runner"
+        },
+        "integration": "wake",
+        "is_free_shipping": false,
+        "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055",
+        "shipping_price": null,
+        "state": "error",
+        "zipcode": "[REDACTED CEP]"
+      }
+    ]
+  },
+  "frontend_reconnect": null,
+  "generated_at": "2026-08-24T16:31:22+00:00",
+  "job_evidence": null,
+  "live": true,
+  "manifest": {
+    "cooldown_seconds": {
+      "max": 6.0,
+      "min": 3.0
+    },
+    "journey_seed_urls": {
+      "amazon": {
+        "pdp": "https://www.amazon.com.br/dp/B07R1W39V2",
+        "shipping": "https://www.amazon.com.br/dp/B07R1W39V2"
+      },
+      "mercado_livre": {
+        "pdp": "https://produto.mercadolivre.com.br/MLB-3563968603-camisa-social-masculina-slim-fit-manga-longa-branca-preta-_JM",
+        "shipping": "https://produto.mercadolivre.com.br/MLB-3563968603-camisa-social-masculina-slim-fit-manga-longa-branca-preta-_JM"
+      },
+      "netshoes": {
+        "pdp": "https://www.netshoes.com.br/camisa-polo-masculina-basica-manga-curta-algodao-lisa-preto-79K-0177-006",
+        "shipping": "https://www.netshoes.com.br/camisa-polo-masculina-basica-manga-curta-algodao-lisa-preto-79K-0177-006"
+      }
+    },
+    "marketplaces": [
+      "amazon",
+      "mercado_livre",
+      "netshoes"
+    ],
+    "max_calls_per_marketplace": 12,
+    "max_external_calls": 36,
+    "max_results": 10,
+    "query": "camiseta masculina",
+    "schema_version": 1,
+    "search_queries": {
+      "business_aramis_camisa_masculina": {
+        "relevance": "aramis"
+      },
+      "generic_camiseta_masculina": {
+        "strict_products": 10
+      }
+    },
+    "timeout_seconds": 45,
+    "zipcode": "[REDACTED CEP]"
+  },
+  "requirement_verdicts": {
+    "MKT-04": "failed",
+    "SEARCH-01": "failed",
+    "SHIP-01": "failed",
+    "VERIFY-01": "failed"
+  },
+  "results": [
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 2362,
+          "evidence": {
+            "product_url_source": null,
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "search",
+          "marketplace": "amazon",
+          "profile": "current",
+          "reason": "valid fresh search payload",
+          "selected_origin": "https://www.amazon.com.br",
+          "status": "fresh_success",
+          "tier": "current",
+          "valid_items": 10
+        }
+      ],
+      "journey": "search",
+      "marketplace": "amazon",
+      "profile": "current",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 4664,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "pdp",
+          "marketplace": "amazon",
+          "profile": "current",
+          "reason": "valid fresh PDP payload",
+          "selected_origin": null,
+          "status": "fresh_success",
+          "tier": "current",
+          "valid_items": 1
+        }
+      ],
+      "journey": "pdp",
+      "marketplace": "amazon",
+      "profile": "current",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 9455,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "shipping",
+          "marketplace": "amazon",
+          "profile": "current",
+          "reason": "explicit free shipping",
+          "selected_origin": null,
+          "status": "fresh_success",
+          "tier": "current",
+          "valid_items": 1
+        }
+      ],
+      "journey": "shipping",
+      "marketplace": "amazon",
+      "profile": "current",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 2274,
+          "evidence": {
+            "product_url_source": null,
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "search",
+          "marketplace": "amazon",
+          "profile": "coherent_http",
+          "reason": "valid fresh search payload",
+          "selected_origin": "https://www.amazon.com.br",
+          "status": "fresh_success",
+          "tier": "coherent_http",
+          "valid_items": 10
+        }
+      ],
+      "journey": "search",
+      "marketplace": "amazon",
+      "profile": "coherent_http",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 5119,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "pdp",
+          "marketplace": "amazon",
+          "profile": "coherent_http",
+          "reason": "valid fresh PDP payload",
+          "selected_origin": null,
+          "status": "fresh_success",
+          "tier": "coherent_http",
+          "valid_items": 1
+        }
+      ],
+      "journey": "pdp",
+      "marketplace": "amazon",
+      "profile": "coherent_http",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "blocked",
+          "challenge_detected": true,
+          "duration_ms": 10731,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "shipping",
+          "marketplace": "amazon",
+          "profile": "coherent_http",
+          "reason": "challenge detected",
+          "selected_origin": null,
+          "status": "blocked",
+          "tier": "coherent_http",
+          "valid_items": 0
+        }
+      ],
+      "journey": "shipping",
+      "marketplace": "amazon",
+      "profile": "coherent_http",
+      "status": "blocked"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 27887,
+          "evidence": {
+            "product_url_source": null,
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "search",
+          "marketplace": "mercado_livre",
+          "profile": "current",
+          "reason": "valid fresh search payload",
+          "selected_origin": "https://www.mercadolivre.com.br",
+          "status": "fresh_success",
+          "tier": "current",
+          "valid_items": 10
+        }
+      ],
+      "journey": "search",
+      "marketplace": "mercado_livre",
+      "profile": "current",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 11452,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "pdp",
+          "marketplace": "mercado_livre",
+          "profile": "current",
+          "reason": "PDP identity or positive price missing",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "current",
+          "valid_items": 0
+        }
+      ],
+      "journey": "pdp",
+      "marketplace": "mercado_livre",
+      "profile": "current",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 8334,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "shipping",
+          "marketplace": "mercado_livre",
+          "profile": "current",
+          "reason": "shipping is neither explicit free nor available with price",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "current",
+          "valid_items": 0
+        }
+      ],
+      "journey": "shipping",
+      "marketplace": "mercado_livre",
+      "profile": "current",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 23751,
+          "evidence": {
+            "product_url_source": null,
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "search",
+          "marketplace": "mercado_livre",
+          "profile": "coherent_http",
+          "reason": "valid fresh search payload",
+          "selected_origin": "https://www.mercadolivre.com.br",
+          "status": "fresh_success",
+          "tier": "coherent_http",
+          "valid_items": 10
+        }
+      ],
+      "journey": "search",
+      "marketplace": "mercado_livre",
+      "profile": "coherent_http",
+      "status": "fresh_success"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 63122,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "pdp",
+          "marketplace": "mercado_livre",
+          "profile": "coherent_http",
+          "reason": "PDP identity or positive price missing",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "coherent_http",
+          "valid_items": 0
+        }
+      ],
+      "journey": "pdp",
+      "marketplace": "mercado_livre",
+      "profile": "coherent_http",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 8485,
+          "evidence": {
+            "product_url_source": "search",
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "shipping",
+          "marketplace": "mercado_livre",
+          "profile": "coherent_http",
+          "reason": "shipping is neither explicit free nor available with price",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "coherent_http",
+          "valid_items": 0
+        }
+      ],
+      "journey": "shipping",
+      "marketplace": "mercado_livre",
+      "profile": "coherent_http",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": true,
+          "duration_ms": 268,
+          "evidence": {
+            "product_url_source": null,
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "search",
+          "marketplace": "netshoes",
+          "profile": "current",
+          "reason": "challenge detected",
+          "selected_origin": null,
+          "status": "blocked",
+          "tier": "current",
+          "valid_items": 0
+        }
+      ],
+      "journey": "search",
+      "marketplace": "netshoes",
+      "profile": "current",
+      "status": "blocked"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 10225,
+          "evidence": {
+            "product_url_source": "seed",
+            "query": "camiseta masculina",
+            "seed_url_used": true
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "pdp",
+          "marketplace": "netshoes",
+          "profile": "current",
+          "reason": "PDP identity or positive price missing",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "current",
+          "valid_items": 0
+        }
+      ],
+      "journey": "pdp",
+      "marketplace": "netshoes",
+      "profile": "current",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 4496,
+          "evidence": {
+            "product_url_source": "seed",
+            "query": "camiseta masculina",
+            "seed_url_used": true
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "shipping",
+          "marketplace": "netshoes",
+          "profile": "current",
+          "reason": "shipping is neither explicit free nor available with price",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "current",
+          "valid_items": 0
+        }
+      ],
+      "journey": "shipping",
+      "marketplace": "netshoes",
+      "profile": "current",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 491,
+          "evidence": {
+            "product_url_source": null,
+            "query": "camiseta masculina",
+            "seed_url_used": false
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "search",
+          "marketplace": "netshoes",
+          "profile": "coherent_http",
+          "reason": "__INITIAL_STATE__ and fallbacks failed",
+          "selected_origin": null,
+          "status": "network_error",
+          "tier": "coherent_http",
+          "valid_items": 0
+        }
+      ],
+      "journey": "search",
+      "marketplace": "netshoes",
+      "profile": "coherent_http",
+      "status": "network_error"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 8352,
+          "evidence": {
+            "product_url_source": "seed",
+            "query": "camiseta masculina",
+            "seed_url_used": true
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "pdp",
+          "marketplace": "netshoes",
+          "profile": "coherent_http",
+          "reason": "PDP identity or positive price missing",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "coherent_http",
+          "valid_items": 0
+        }
+      ],
+      "journey": "pdp",
+      "marketplace": "netshoes",
+      "profile": "coherent_http",
+      "status": "parser_failure"
+    },
+    {
+      "attempts": [
+        {
+          "cache_state": "fresh",
+          "challenge_detected": false,
+          "duration_ms": 4598,
+          "evidence": {
+            "product_url_source": "seed",
+            "query": "camiseta masculina",
+            "seed_url_used": true
+          },
+          "external_calls": 1,
+          "fallback_used": false,
+          "http_status": null,
+          "journey": "shipping",
+          "marketplace": "netshoes",
+          "profile": "coherent_http",
+          "reason": "shipping is neither explicit free nor available with price",
+          "selected_origin": null,
+          "status": "parser_failure",
+          "tier": "coherent_http",
+          "valid_items": 0
+        }
+      ],
+      "journey": "shipping",
+      "marketplace": "netshoes",
+      "profile": "coherent_http",
+      "status": "parser_failure"
+    }
+  ],
+  "schema_version": 1,
+  "search_gates": [
+    {
+      "accepted": [],
+      "counts_toward_threshold": true,
+      "passed": false,
+      "query": "camiseta masculina",
+      "query_id": "generic_camiseta_masculina",
+      "rejected": [
+        {
+          "marketplace": "amazon",
+          "native_code": "b0dqftxt5v",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Masculinas-Premium-Polo-Wear/dp/B0DQFTXT5V",
+          "price": "97.84",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 3 Camiseta Masculina Algodão Polo Wear"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b09qxv3zdb",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-Algod%C3%A3o-Pica-pau-Patriota-Reserva/dp/B09QXV3ZDB",
+          "price": "149.0",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Algodão Pica-pau Patriota Reserva"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0hfd7134d",
+          "normalized_url": "https://www.amazon.com.br/Conjunto-Masculino-Camiseta-Bermuda-Brooklyn/dp/B0HFD7134D",
+          "price": "99.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit Conjunto Masculino Camiseta e Bermuda Brooklyn Casual 100% Algodão Super Confort"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0bft97sdn",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-B%C3%A1sica-Tech-T-shirt-Preta/dp/B0BFT97SDN",
+          "price": "89.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Tech T-shirt Gola U Masculino"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0h4xftfjv",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-Masculina-LaKoss-Algod%C3%A3o-Amarelo/dp/B0H4XFTFJV",
+          "price": "38.61",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Masculina LaKoss Algodão UV50+ Fio 30.1 Premium Gola Redonda"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b09kybb6yn",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Manga-Hering-Masculino-Multicolorido/dp/B09KYBB6YN",
+          "price": "99.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit Com 3 Camisetas Masculinas Básicas Regular Hering - Hering"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0f5bsrxjc",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Masculina-SSB-Brand-Colorido/dp/B0F5BSRXJC",
+          "price": "139.23",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 7 Camisetas Masculina SSB Brand Lisa Algodão 30.1 Premium"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0g9b5dqt3",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-Mizuno-Nirvana-Masculina-Preto/dp/B0G9B5DQT3",
+          "price": "42.62",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Mizuno Nirvana Masculina"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0bfsry7r8",
+          "normalized_url": "https://www.amazon.com.br/Tech-T-shirt-Gola-Masculino-Marinho/dp/B0BFSRY7R8",
+          "price": "89.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Tech T-shirt Gola U Masculino"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0b5d6bst5",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Masculina-Manga-Algod%C3%A3o-Premium/dp/B0B5D6BST5",
+          "price": "125.3",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 7 Camisetas Masculina Manga Curta Lisa Algodão Premium"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0bft97sdn",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-B%C3%A1sica-Tech-T-shirt-Preta/dp/B0BFT97SDN",
+          "price": "89.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Tech T-shirt Gola U Masculino"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0h4xftfjv",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-Masculina-LaKoss-Algod%C3%A3o-Amarelo/dp/B0H4XFTFJV",
+          "price": "38.61",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Masculina LaKoss Algodão UV50+ Fio 30.1 Premium Gola Redonda"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0f5bsrxjc",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Masculina-SSB-Brand-Colorido/dp/B0F5BSRXJC",
+          "price": "139.23",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 7 Camisetas Masculina SSB Brand Lisa Algodão 30.1 Premium"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b09kybb6yn",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Manga-Hering-Masculino-Multicolorido/dp/B09KYBB6YN",
+          "price": "99.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit Com 3 Camisetas Masculinas Básicas Regular Hering - Hering"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0dqftxt5v",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Masculinas-Premium-Polo-Wear/dp/B0DQFTXT5V",
+          "price": "97.84",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 3 Camiseta Masculina Algodão Polo Wear"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0g9b5dqt3",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-Mizuno-Nirvana-Masculina-Preto/dp/B0G9B5DQT3",
+          "price": "42.62",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Mizuno Nirvana Masculina"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0b5d6bst5",
+          "normalized_url": "https://www.amazon.com.br/Camisetas-Masculina-Manga-Algod%C3%A3o-Premium/dp/B0B5D6BST5",
+          "price": "125.3",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 7 Camisetas Masculina Manga Curta Lisa Algodão Premium"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0cl516hbn",
+          "normalized_url": "https://www.amazon.com.br/Kit-Com-Camisetas-Masculinas-B%C3%A1sicas/dp/B0CL516HBN",
+          "price": "99.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit Com 3 Camisetas Masculinas Básicas Regular Hering - Hering"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0bfsry7r8",
+          "normalized_url": "https://www.amazon.com.br/Tech-T-shirt-Gola-Masculino-Marinho/dp/B0BFSRY7R8",
+          "price": "89.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Tech T-shirt Gola U Masculino"
+        },
+        {
+          "marketplace": "amazon",
+          "native_code": "b0gtntchdf",
+          "normalized_url": "https://www.amazon.com.br/Camiseta-Canelada-Americana-Masculina-Premium/dp/B0GTNTCHDF",
+          "price": "29.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Canelada Americana Masculina Ribana Premium"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/kit-2-camisetas-oversized-masculina-texturizado-premium/up/MLBU3452444229",
+          "price": "74.02",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 2 Camisetas Oversized Masculina Texturizado Premium Kit 2 Over - Preto Marrom G"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-6221828354-kit-3-camisetas-termicas-masculina-termica-proteco-solauv50-_JM",
+          "price": "55.48",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 3 Camisetas Térmicas Masculina Térmica Proteção Solauv50"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camiseta-esportiva-masculina-leve-de-secagem-rapida-para-treino/up/MLBU4026245313",
+          "price": "35.38",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Esportiva Masculina Leve De Secagem Rápida Para Treino Azul Xl"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/kit-com-3-camisetas-masculinas-basicas-slim-cor-preto-hering/up/MLBU3269444902",
+          "price": "79.0",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit Com 3 Camisetas Masculinas Básicas Slim Cor Preto Hering Preto Liso Xg"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-3451356293-kit-3-camisetas-oversized-masculina-basic-streetwear-_JM",
+          "price": "79.89",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 3 Camisetas Oversized Masculina [REDACTED CREDENTIAL]"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-980397034-regata-modeladora-e-postural-alta-compresso-reduz-medidas-_JM",
+          "price": "38.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Regata Modeladora E Postural Alta Compressão Reduz Medidas"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camisa-social-masculina-gola-padre-linho-premium-moda-luxo/up/MLBU793340189",
+          "price": "78.48",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camisa Social Masculina Gola Padre Linho Premium Moda Luxo Linho Natural Longa Gg"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camiseta-masculina-insider-light/up/MLBU3888621137",
+          "price": "69.0",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Masculina Insider Light Preta G Gola U"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-4035717523-kit-5-camisetas-basica-masculina-dry-fit-esporte-treino-lisa-_JM",
+          "price": "64.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 5 Camisetas Básica Masculina Dry Fit Esporte Treino Lisa"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camiseta-camisa-plus-size-masculina-lisa-premium-basica/up/MLBU1411774322",
+          "price": "27.15",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Camisa Plus Size Masculina Lisa Premium Basíca Preto Liso G4"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/kit-2-camisetas-oversized-masculina-texturizado-premium/up/MLBU3452444229",
+          "price": "74.02",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 2 Camisetas Oversized Masculina Texturizado Premium Kit 2 Over - Preto Marrom G"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-6221828354-kit-3-camisetas-termicas-masculina-termica-proteco-solauv50-_JM",
+          "price": "55.48",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 3 Camisetas Térmicas Masculina Térmica Proteção Solauv50"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camiseta-esportiva-masculina-leve-de-secagem-rapida-para-treino/up/MLBU4026245313",
+          "price": "35.38",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Esportiva Masculina Leve De Secagem Rápida Para Treino Azul Xl"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/kit-com-3-camisetas-masculinas-basicas-slim-cor-preto-hering/up/MLBU3269444902",
+          "price": "79.0",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit Com 3 Camisetas Masculinas Básicas Slim Cor Preto Hering Preto Liso Xg"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-3451356293-kit-3-camisetas-oversized-masculina-basic-streetwear-_JM",
+          "price": "79.89",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 3 Camisetas Oversized Masculina [REDACTED CREDENTIAL]"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-980397034-regata-modeladora-e-postural-alta-compresso-reduz-medidas-_JM",
+          "price": "38.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Regata Modeladora E Postural Alta Compressão Reduz Medidas"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camisa-social-masculina-gola-padre-linho-premium-moda-luxo/up/MLBU793340189",
+          "price": "78.48",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camisa Social Masculina Gola Padre Linho Premium Moda Luxo Linho Natural Longa Gg"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camiseta-masculina-insider-light/up/MLBU3888621137",
+          "price": "69.0",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Masculina Insider Light Preta G Gola U"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://produto.mercadolivre.com.br/MLB-4035717523-kit-5-camisetas-basica-masculina-dry-fit-esporte-treino-lisa-_JM",
+          "price": "64.9",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Kit 5 Camisetas Básica Masculina Dry Fit Esporte Treino Lisa"
+        },
+        {
+          "marketplace": "mercado_livre",
+          "native_code": null,
+          "normalized_url": "https://www.mercadolivre.com.br/camiseta-camisa-plus-size-masculina-lisa-premium-basica/up/MLBU1411774322",
+          "price": "27.15",
+          "reason": "score_below_cutoff",
+          "score": null,
+          "sku": null,
+          "title": "Camiseta Camisa Plus Size Masculina Lisa Premium Basíca Preto Liso G4"
+        },
+        {
+          "marketplace": null,
+          "native_code": null,
+          "normalized_url": "",
+          "price": null,
+          "reason": "accepted_count_below_required",
+          "score": null,
+          "sku": null,
+          "title": "camiseta masculina"
+        }
+      ],
+      "required_count": 10
+    },
+    {
+      "accepted": [],
+      "counts_toward_threshold": false,
+      "passed": false,
+      "query": "aramis camisa masculina",
+      "query_id": "business_aramis_camisa_masculina",
+      "rejected": [],
+      "required_count": 0
+    }
+  ],
+  "total_external_calls": 18,
+  "verdicts": [
+    {
+      "external_calls": 3,
+      "failed_journeys": {
+        "shipping": "blocked"
+      },
+      "marketplace": "amazon",
+      "profile": "coherent_http",
+      "status": "not_circumvented",
+      "successful_journeys": [
+        "pdp",
+        "search"
+      ]
+    },
+    {
+      "external_calls": 3,
+      "failed_journeys": {},
+      "marketplace": "amazon",
+      "profile": "current",
+      "status": "circumvented_in_test_scope",
+      "successful_journeys": [
+        "pdp",
+        "search",
+        "shipping"
+      ]
+    },
+    {
+      "external_calls": 3,
+      "failed_journeys": {
+        "pdp": "parser_failure",
+        "shipping": "parser_failure"
+      },
+      "marketplace": "mercado_livre",
+      "profile": "coherent_http",
+      "status": "not_circumvented",
+      "successful_journeys": [
+        "search"
+      ]
+    },
+    {
+      "external_calls": 3,
+      "failed_journeys": {
+        "pdp": "parser_failure",
+        "shipping": "parser_failure"
+      },
+      "marketplace": "mercado_livre",
+      "profile": "current",
+      "status": "not_circumvented",
+      "successful_journeys": [
+        "search"
+      ]
+    },
+    {
+      "external_calls": 3,
+      "failed_journeys": {
+        "pdp": "parser_failure",
+        "search": "network_error",
+        "shipping": "parser_failure"
+      },
+      "marketplace": "netshoes",
+      "profile": "coherent_http",
+      "status": "not_circumvented",
+      "successful_journeys": []
+    },
+    {
+      "external_calls": 3,
+      "failed_journeys": {
+        "pdp": "parser_failure",
+        "search": "blocked",
+        "shipping": "parser_failure"
+      },
+      "marketplace": "netshoes",
+      "profile": "current",
+      "status": "not_circumvented",
+      "successful_journeys": []
+    }
+  ]
+}

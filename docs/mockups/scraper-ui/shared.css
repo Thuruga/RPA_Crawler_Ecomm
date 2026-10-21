@@ -1,0 +1,168 @@
+/* Design tokens replicados de frontend/src/index.css + App.css */
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --bg-dark: #0f172a;
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --accent: #8b5cf6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+svg { display: block; }
+
+/* --- App shell --- */
+.app-shell { display: flex; min-height: 100vh; width: 100%; }
+
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: rgba(15, 23, 42, 0.95);
+  border-right: 1px solid var(--glass-border);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-header { display: flex; align-items: center; gap: 10px; padding: 0 4px 20px; }
+.logo-icon {
+  width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex; align-items: center; justify-content: center; color: #fff;
+}
+.sidebar-header h2 { font-size: 16px; font-weight: 600; }
+
+.nav { display: flex; flex-direction: column; gap: 4px; }
+.nav-item {
+  display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 8px;
+  color: var(--text-muted); font-weight: 500; font-size: 14px; text-decoration: none; cursor: pointer;
+}
+.nav-item svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--text-muted); }
+.nav-item.active { background: rgba(99, 102, 241, 0.15); color: var(--text-main); }
+.nav-item.active svg { color: var(--primary); }
+.nav-spacer { flex: 1; }
+
+.main {
+  flex: 1; min-width: 0; padding: 32px 40px; display: flex; flex-direction: column; gap: 24px;
+}
+
+.content-header { display: flex; align-items: center; justify-content: space-between; }
+.content-header h1 { font-size: 24px; font-weight: 700; }
+.header-actions { display: flex; align-items: center; gap: 12px; }
+.icon-btn {
+  width: 40px; height: 40px; border-radius: 10px; background: var(--card-bg);
+  border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); position: relative; flex-shrink: 0;
+}
+.icon-btn svg { width: 18px; height: 18px; }
+.icon-btn .dot {
+  position: absolute; top: 6px; right: 6px; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--error); border: 2px solid var(--bg-dark);
+}
+.icon-btn.danger svg { color: var(--error); }
+.icon-btn.success svg { color: var(--success); }
+.icon-btn.accent svg { color: var(--primary); }
+
+/* --- Cards --- */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.card-header { margin-bottom: 16px; }
+.card-title { font-size: 16px; font-weight: 600; }
+.card-subtitle { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+/* --- Buttons --- */
+.btn {
+  padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem;
+  border: none; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;
+  font-family: inherit; white-space: nowrap;
+}
+.btn svg { width: 18px; height: 18px; }
+.btn-primary { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; }
+.btn-outline { background: transparent; border: 1px solid var(--glass-border); color: var(--text-main); }
+.btn-success { background: var(--success); color: #fff; }
+.btn-sm { padding: 0.45rem 0.9rem; font-size: 0.78rem; }
+.btn-sm svg { width: 14px; height: 14px; }
+.btn-link {
+  background: none; border: none; color: var(--primary); font-size: 12px; font-weight: 600;
+  display: inline-flex; align-items: center; gap: 4px; cursor: pointer; font-family: inherit;
+}
+
+/* --- Forms --- */
+.label { display: block; font-size: 0.8rem; font-weight: 500; color: var(--text-muted); margin-bottom: 0.4rem; }
+.input, .select {
+  width: 100%; padding: 0.75rem 1rem; background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--glass-border); border-radius: 0.5rem; color: #fff;
+  font-family: inherit; font-size: 14px;
+}
+.input-icon-wrapper { position: relative; }
+.input-icon-wrapper svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--text-muted); }
+.input-icon-wrapper .input { padding-left: 42px; }
+
+/* --- Status --- */
+.status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.status-dot.online { background: var(--success); box-shadow: 0 0 0 3px rgba(16,185,129,0.2); }
+.status-dot.offline { background: var(--text-muted); }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 999px;
+  font-size: 11px; font-weight: 600; white-space: nowrap;
+}
+.badge svg { width: 12px; height: 12px; }
+.badge-success { background: rgba(16,185,129,0.15); color: var(--success); }
+.badge-error { background: rgba(239,68,68,0.15); color: var(--error); }
+.badge-warning { background: rgba(245,158,11,0.15); color: var(--warning); }
+.badge-muted { background: rgba(148,163,184,0.15); color: var(--text-muted); }
+.badge-primary { background: rgba(99,102,241,0.15); color: var(--primary); }
+
+.text-muted { color: var(--text-muted); }
+.text-success { color: var(--success); }
+.text-error { color: var(--error); }
+
+/* --- Brand chip --- */
+.brand-chip {
+  display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 10px;
+  background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border); cursor: pointer;
+  font-size: 13px; font-weight: 600; color: var(--text-main);
+}
+.brand-chip.active { background: rgba(99,102,241,0.15); border-color: var(--primary); }
+.brand-chip-icon { width: 22px; height: 22px; border-radius: 6px; overflow: hidden; flex-shrink: 0; }
+.brand-logo-fallback {
+  width: 100%; height: 100%; border-radius: 6px; background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff;
+}
+
+/* --- Progress --- */
+.progress-bar-large { height: 10px; border-radius: 999px; background: rgba(255,255,255,0.06); overflow: hidden; }
+.progress-fill-large { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+
+/* --- Empty state placeholder image blocks (stand-in for real photos) --- */
+.ph-image {
+  background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(139,92,246,0.12));
+  display: flex; align-items: center; justify-content: center; color: var(--text-muted); flex-shrink: 0;
+}
+.ph-image svg { width: 32%; height: 32%; }

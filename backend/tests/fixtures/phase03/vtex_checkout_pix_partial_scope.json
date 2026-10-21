@@ -1,0 +1,5 @@
+{
+  "items": [{"id": "sku-1", "quantity": 1, "seller": "1", "price": 20000, "sellingPrice": 18000}],
+  "ratesAndBenefitsData": {"rateAndBenefitsIdentifiers": [{"name": "R$ 180,00 no pix", "description": "Beneficio aplicado"}]},
+  "totalizers": [{"id": "Items", "value": 20000}, {"id": "Discounts", "value": -2000}]
+}

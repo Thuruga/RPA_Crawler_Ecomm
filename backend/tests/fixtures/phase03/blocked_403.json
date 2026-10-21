@@ -1,0 +1,5 @@
+{
+  "status": 403,
+  "error": "access_denied",
+  "message": "Request blocked by storefront protection"
+}

@@ -1,0 +1,39 @@
+__pycache__
+*.pyc
+.pytest_cache
+.env
+.venv
+venv
+node_modules
+dist
+sandbox_*
+
+# ---------------------------------------------------------------------------
+# Estado de runtime em data/ -- 155 dos 156 MB do diretorio.
+#
+# Nao sao dados de build: sao artefatos que a aplicacao gera rodando. Assados na
+# imagem eles (a) incham a layer do COPY e (b) em producao, sem volume mount,
+# fariam o container subir com estado velho de outra maquina.
+#
+# Os seeds pequenos que a aplicacao PRECISA -- brands.json (27 KB),
+# map_rules.json, nlp_vocabulary.json -- NAO estao listados aqui de proposito, e
+# seguem entrando na imagem.
+# ---------------------------------------------------------------------------
+data/banners/
+data/audits/
+data/price_monitors.json
+data/search_history.json
+data/marketplace_resilience.json
+data/notifications.json
+data/shipping_matrix_cache.json
+data/category_scans.json
+data/monitored_categories.json
+data/monitored_products_*.json
+data/category_price_history_*.json
+data/category_scan_summaries_*.json
+data/stock_summary_*.json
+
+# Scripts de scratch/exploracao -- nunca fazem parte do runtime da imagem.
+scratch_*.py
+test_*.py
+check_*.py

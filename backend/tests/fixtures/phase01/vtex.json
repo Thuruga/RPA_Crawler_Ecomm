@@ -1,0 +1,62 @@
+{
+  "productId": "20264200000123456789",
+  "productName": "Camisa Social Slim Fit",
+  "brand": "TestBrand",
+  "brandId": 1,
+  "linkText": "camisa-social-slim-fit",
+  "productReference": "REF-VTEX-999",
+  "categoryId": "10",
+  "categories": ["/Masculino/Camisas/Social/"],
+  "categoriesIds": ["/10/11/12/"],
+  "link": "https://teststore.vtex.com/camisa-social-slim-fit/p",
+  "description": "Camisa social de algodao",
+  "allSpecifications": ["Cor", "Composicao"],
+  "Cor": ["Azul Marinho", "Branco"],
+  "Composicao": ["100% Algodao"],
+  "items": [
+    {
+      "itemId": "2002642",
+      "name": "P",
+      "nameComplete": "Camisa Social Slim Fit - P",
+      "ean": "7891234567890",
+      "variations": ["Tamanho"],
+      "images": [{"imageUrl": "https://teststore.vtex.com/img/1.jpg"}],
+      "sellers": [
+        {
+          "sellerId": "1",
+          "sellerName": "Loja Teste",
+          "sellerDefault": true,
+          "commertialOffer": {
+            "Price": 199.9,
+            "ListPrice": 249.9,
+            "PriceWithoutDiscount": 249.9,
+            "RewardValue": 0,
+            "AvailableQuantity": 5
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "2002643",
+      "name": "M",
+      "nameComplete": "Camisa Social Slim Fit - M",
+      "ean": "7891234567891",
+      "variations": ["Tamanho"],
+      "images": [{"imageUrl": "https://teststore.vtex.com/img/2.jpg"}],
+      "sellers": [
+        {
+          "sellerId": "1",
+          "sellerName": "Loja Teste",
+          "sellerDefault": true,
+          "commertialOffer": {
+            "Price": 199.9,
+            "ListPrice": 249.9,
+            "PriceWithoutDiscount": 249.9,
+            "RewardValue": 0,
+            "AvailableQuantity": 0
+          }
+        }
+      ]
+    }
+  ]
+}

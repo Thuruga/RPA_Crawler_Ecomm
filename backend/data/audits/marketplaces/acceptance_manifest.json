@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "marketplaces": [
+    "amazon",
+    "mercado_livre",
+    "netshoes"
+  ],
+  "query": "camiseta masculina",
+  "zipcode": "01310100",
+  "search_queries": {
+    "generic_camiseta_masculina": {
+      "strict_products": 10
+    },
+    "business_aramis_camisa_masculina": {
+      "relevance": "aramis"
+    }
+  },
+  "max_results": 10,
+  "timeout_seconds": 45,
+  "cooldown_seconds": {
+    "min": 3.0,
+    "max": 6.0
+  },
+  "max_external_calls": 36,
+  "max_calls_per_marketplace": 12,
+  "journey_seed_urls": {
+    "amazon": {
+      "pdp": "https://www.amazon.com.br/dp/B07R1W39V2",
+      "shipping": "https://www.amazon.com.br/dp/B07R1W39V2"
+    },
+    "mercado_livre": {
+      "pdp": "https://produto.mercadolivre.com.br/MLB-3563968603-camisa-social-masculina-slim-fit-manga-longa-branca-preta-_JM",
+      "shipping": "https://produto.mercadolivre.com.br/MLB-3563968603-camisa-social-masculina-slim-fit-manga-longa-branca-preta-_JM"
+    },
+    "netshoes": {
+      "pdp": "https://www.netshoes.com.br/camisa-polo-masculina-basica-manga-curta-algodao-lisa-preto-79K-0177-006",
+      "shipping": "https://www.netshoes.com.br/camisa-polo-masculina-basica-manga-curta-algodao-lisa-preto-79K-0177-006"
+    }
+  }
+}

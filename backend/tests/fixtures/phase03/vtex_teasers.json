@@ -1,0 +1,13 @@
+{
+  "productId": "vtex-100",
+  "itemId": "vtex-sku-1",
+  "sellerId": "1",
+  "Price": 200.0,
+  "Teasers": [
+    {
+      "name": "10% com Pix",
+      "conditions": {"parameters": [{"name": "PaymentMethodId", "value": "pix"}]},
+      "effects": {"parameters": [{"name": "PercentualDiscount", "value": "10"}]}
+    }
+  ]
+}

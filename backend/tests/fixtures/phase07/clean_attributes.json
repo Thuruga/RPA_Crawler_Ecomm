@@ -1,0 +1,20 @@
+{
+  "brands": {
+    "amazon": {"engine": "amazon", "phase01_fixture": "amazon.html", "raw_colors": [], "raw_sizes": [], "canonical_colors": [], "canonical_sizes": []},
+    "mercado_livre": {"engine": "mercadolivre", "phase01_fixture": "mercado_livre.html", "raw_colors": [], "raw_sizes": [], "canonical_colors": [], "canonical_sizes": []},
+    "netshoes": {"engine": "netshoes", "phase01_fixture": "netshoes.html", "raw_colors": [], "raw_sizes": ["P", "M"], "canonical_colors": [], "canonical_sizes": ["P", "M"]},
+    "ricardoalmeida": {"engine": "shopify", "phase01_fixture": "shopify.json", "raw_colors": ["Azul"], "raw_sizes": ["M"], "canonical_colors": ["Azul"], "canonical_sizes": ["M"]},
+    "aramis": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "foxton": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "hering": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "hugoboss": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "ofcreserva": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "reserva": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "tommy": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "trackfield": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "zapalla": {"engine": "vtex", "phase01_fixture": "vtex.json", "raw_colors": ["Azul Marinho", "Branco"], "raw_sizes": ["P"], "canonical_colors": ["Azul Marinho", "Branco"], "canonical_sizes": ["P"]},
+    "richards": {"engine": "wake", "phase01_fixture": "wake.json", "raw_colors": [], "raw_sizes": [], "canonical_colors": [], "canonical_sizes": []},
+    "zara": {"engine": "zara", "phase01_fixture": "zara.html", "raw_colors": ["Azul"], "raw_sizes": ["P", "M"], "canonical_colors": ["Azul"], "canonical_sizes": ["P", "M"]},
+    "lacoste": {"engine": "sfcc", "phase01_fixture": "sfcc.html", "raw_colors": [], "raw_sizes": [], "canonical_colors": [], "canonical_sizes": []}
+  }
+}

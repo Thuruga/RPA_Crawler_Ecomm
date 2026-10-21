@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Busca por SKU — E-Scraper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  .search-main-row { display: flex; gap: 16px; }
+  .search-field { flex: 1; }
+  .search-field.cep { flex: 0 0 220px; }
+  .helper-text { font-size: 12px; color: var(--text-muted); margin: 10px 0 16px; }
+
+  .reference-row { display: flex; gap: 16px; align-items: center; }
+  .reference-row .ph-image { width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; }
+  .reference-row h3 { font-size: 16px; margin-bottom: 6px; }
+  .reference-price { color: var(--success); font-weight: 700; font-size: 14px; }
+  .reference-link { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: var(--primary); margin-top: 8px; text-decoration: none; }
+  .reference-link svg { width: 12px; height: 12px; }
+
+  .export-toolbar { display: flex; justify-content: flex-end; margin: 4px 0 16px; }
+
+  .marketplace-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .offer-row {
+    display: flex; flex-direction: column; gap: 8px; padding: 12px; border-radius: 12px;
+    background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); margin-top: 12px;
+  }
+  .offer-row.winner { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); }
+  .offer-title { font-size: 13px; font-weight: 500; line-height: 1.4; }
+  .offer-seller { font-size: 11px; color: var(--text-muted); }
+  .offer-image { width: 100%; height: 120px; border-radius: 8px; }
+  .offer-price-row { display: flex; justify-content: space-between; align-items: center; }
+  .offer-price { font-size: 18px; font-weight: 700; }
+  .offer-price.winner-price { color: var(--success); }
+  .badge-freeship { font-size: 10px; font-weight: 700; color: #fff; background: var(--success); padding: 3px 8px; border-radius: 4px; }
+  .badge-lowest { font-size: 10px; font-weight: 700; color: var(--success); background: rgba(16,185,129,0.12); padding: 3px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; }
+  .badge-lowest svg { width: 10px; height: 10px; }
+  .offer-shipping { font-size: 11px; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center; }
+  .offer-shipping .pending { color: var(--warning); }
+  .btn-calc { font-size: 10px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); color: var(--warning); padding: 3px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; font-family: inherit; }
+  .btn-calc svg { width: 10px; height: 10px; }
+  .tag-similar { font-size: 9px; font-weight: 700; text-transform: uppercase; color: var(--warning); background: rgba(245,158,11,0.12); padding: 1px 6px; border-radius: 4px; margin-right: 6px; }
+</style>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <h2>E-Scraper</h2>
+    </div>
+    <nav class="nav">
+      <a class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v9H3z"/><path d="M14 3h7v5h-7z"/><path d="M14 12h7v9h-7z"/><path d="M3 16h7v5H3z"/></svg><span>Monitores</span></a>
+      <a class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><span>Comparativa</span></a>
+      <a class="nav-item active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6a6 6 0 1 0 6 6"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg><span>SKU</span></a>
+      <a class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/></svg><span>Categorias</span></a>
+      <a class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Banners</span></a>
+      <div class="nav-spacer"></div>
+      <a class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="M3.5 8.5 12 13l8.5-4.5"/><path d="M12 13v9"/></svg><span>Marcas</span></a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="content-header">
+      <h1>Busca por SKU</h1>
+      <div class="header-actions">
+        <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9z"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="dot"></span></button>
+      </div>
+    </header>
+
+    <section class="glass-card">
+      <div class="search-main-row">
+        <div class="search-field">
+          <label class="label">SKU Alvo (Aramis)</label>
+          <div class="input-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input class="input" type="text" value="ML.05.0326046" placeholder="Ex: ML.05.0326046">
+          </div>
+        </div>
+        <div class="search-field cep">
+          <label class="label">CEP (Opcional)</label>
+          <div class="input-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <input class="input" type="text" placeholder="Ex: 01001-000">
+          </div>
+        </div>
+      </div>
+      <p class="helper-text">Ao informar o SKU, o sistema irá automaticamente na loja da Aramis identificar o nome e categoria do produto para varrer os demais marketplaces.</p>
+      <button type="button" class="btn btn-primary" style="width:100%; justify-content:center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6a6 6 0 1 0 6 6"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+        Buscar em Marketplaces
+      </button>
+    </section>
+
+    <section class="glass-card">
+      <div class="card-header"><h3 class="card-title">Produto Referência (Aramis)</h3></div>
+      <div class="reference-row">
+        <div class="ph-image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="M3.5 8.5 12 13l8.5-4.5"/><path d="M12 13v9"/></svg></div>
+        <div>
+          <h3>Camiseta Aramis Básica Algodão Pima — Azul Marinho</h3>
+          <span class="reference-price">R$ 89,90</span>
+          <br>
+          <a class="reference-link" href="#">Ver no site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="export-toolbar">
+      <button type="button" class="btn btn-outline btn-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h8"/><path d="M8 13v4"/><path d="M12 13v4"/><path d="M16 13v4"/></svg>
+        Exportar Excel
+      </button>
+    </div>
+
+    <div class="marketplace-grid">
+      <section class="glass-card">
+        <div class="card-header"><h3 class="card-title">Mercado Livre</h3></div>
+
+        <div class="offer-row winner">
+          <p class="offer-title">Camiseta Aramis Básica Algodão Pima Masculina</p>
+          <span class="offer-seller">Vendedor: Aramis Oficial</span>
+          <div class="offer-image ph-image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="M3.5 8.5 12 13l8.5-4.5"/><path d="M12 13v9"/></svg></div>
+          <div class="offer-price-row">
+            <span class="offer-price winner-price">R$ 84,90</span>
+            <span class="badge-lowest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 10l-4.5 4.5L9 12"/></svg>Menor Preço</span>
+          </div>
+          <div class="offer-shipping"><span>R$ 84,90 (Produto) + R$ 0,00 (Frete)</span></div>
+        </div>
+
+        <div class="offer-row">
+          <p class="offer-title"><span class="tag-similar">Similar</span>Camiseta Básica Gola Careca Slim</p>
+          <span class="offer-seller">Vendedor: ModaMax Store</span>
+          <div class="offer-price-row">
+            <span class="offer-price">R$ 69,90</span>
+            <span class="badge-freeship">Frete Grátis</span>
+          </div>
+          <div class="offer-shipping"><span>R$ 69,90 (Produto) + R$ 0,00 (Frete)</span></div>
+        </div>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header"><h3 class="card-title">Netshoes</h3></div>
+        <div class="offer-row">
+          <p class="offer-title">Camiseta Aramis Basic Fit</p>
+          <span class="offer-seller">Vendedor: Netshoes</span>
+          <div class="offer-price-row"><span class="offer-price">R$ 94,90</span></div>
+          <div class="offer-shipping">
+            <span class="pending">Frete a calcular</span>
+            <button class="btn-calc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="M3.5 8.5 12 13l8.5-4.5"/><path d="M12 13v9"/></svg>Calcular Frete</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header"><h3 class="card-title">Amazon</h3></div>
+        <div class="offer-row">
+          <p class="offer-title">Camiseta Aramis Algodão Pima Premium</p>
+          <span class="offer-seller">Vendedor: Amazon.com.br</span>
+          <div class="offer-price-row"><span class="offer-price">R$ 99,00</span></div>
+          <div class="offer-shipping"><span>Bloqueado (anti-bot)</span></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>

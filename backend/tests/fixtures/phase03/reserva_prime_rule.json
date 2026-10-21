@@ -1,0 +1,11 @@
+{
+  "isActive": true,
+  "percentualDiscountValue": 15,
+  "includedCategories": ["camisas"],
+  "includedCollections": ["speed"],
+  "includedBrands": ["reserva"],
+  "includedSellers": ["1"],
+  "excludedCategories": ["outlet"],
+  "excludedCollections": ["liquidacao-final"],
+  "excludedSkus": ["000000"]
+}

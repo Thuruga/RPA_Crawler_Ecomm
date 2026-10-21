@@ -1,0 +1,59 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.0
+pydantic-settings>=2.0
+# Fixado na MESMA versao da imagem base do Dockerfile
+# (mcr.microsoft.com/playwright/python:v1.62.0-jammy). Com um range aberto o pip
+# instalava uma versao mais nova que a da base, os browsers nao casavam e o
+# `playwright install` baixava um segundo conjunto inteiro (~690 MB) em cima do
+# que a imagem ja trazia. Ao subir a base, suba este pin junto.
+playwright==1.62.0
+pandas>=2.0
+openpyxl>=3.1.0
+aiohttp>=3.9.0
+brotli>=1.1.0
+python-dotenv>=1.0.0
+curl_cffi>=0.6.0
+beautifulsoup4>=4.12.0
+# easyocr removido: `services/ocr_service.py` e o unico lugar que o importa, e
+# esse modulo nao e importado por ninguem -- codigo morto. Arrastava scikit-image
+# e outras dependencias pesadas. Se o OCR voltar a ser usado, reinstale junto
+# com uma revisao do `gpu=True` em ocr_service.py (nao existe GPU no container).
+opencv-python-headless>=4.9.0
+rapidfuzz>=3.0.0
+playwright-stealth>=1.0.6
+transformers>=4.40.0
+APScheduler>=3.10.0
+aio_pika>=9.0.0
+prisma>=0.13.1
+cachetools
+tenacity
+psycopg2-binary>=2.9.9
+# core/job_manager.py importa `AsyncFileLock`, que existe a partir do
+# filelock 3.15. Sem declarar, a resolucao transitiva puxa 3.14 na imagem e o
+# backend nem importa (ImportError no boot); local funcionava por acidente,
+# porque outra dependencia ja havia instalado uma versao nova.
+filelock>=3.15
+
+# Observabilidade (OpenTelemetry) — Phase 15 (OBS-01).
+# Os pacotes core (api/sdk/exporter) e os pacotes de instrumentacao contrib
+# (esquema 0.x) sao lancados em lockstep -- 1.45.0 pareado com 0.66b0 -- e
+# devem ser atualizados juntos. O exporter usado e a variante HTTP/protobuf
+# porque os endpoints da Empresa sao URLs OTLP/HTTP com path (D-02). Nenhum
+# pacote de push da API do Loki e usado: Loki 3+ ingere OTLP nativamente.
+opentelemetry-api==1.45.0
+opentelemetry-sdk==1.45.0
+opentelemetry-exporter-otlp-proto-http==1.45.0
+opentelemetry-instrumentation-fastapi==0.66b0
+opentelemetry-instrumentation-httpx==0.66b0
+opentelemetry-instrumentation-logging==0.66b0
+
+# metadados de cada execução usa pyarrow e o REST do Blob usa httpx, sem
+# azure-storage-blob. Os dois já estavam instalados no ambiente local mas não
+# declarados, então a imagem Docker não os tinha.
+pyarrow>=15.0.0
+httpx>=0.27.0
+
+# SDK oficial do Clerk para Python, aprovado pelo tech lead (D-04)
+# pin exato porque a API (authenticate_request_async, AuthenticateRequestOptions, prefixos de token) foi verificada contra o código-fonte da wheel 7.0.0
+# PyJWT e cryptography chegam como dependências transitivas e são reutilizados pelo helper de JWKS, sem pin próprio

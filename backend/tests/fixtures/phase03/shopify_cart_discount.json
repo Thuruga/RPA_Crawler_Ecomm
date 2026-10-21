@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "id": 20001,
+      "quantity": 1,
+      "original_line_price": 12900,
+      "final_line_price": 11610,
+      "discounts": [{"title": "10% no Pix", "amount": 1290}]
+    }
+  ],
+  "total_price": 11610,
+  "total_discount": 1290
+}

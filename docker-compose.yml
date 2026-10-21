@@ -1,0 +1,78 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: omnipulse_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: scrapper_dev
+    ports:
+      - "5435:5432"
+    volumes:
+      - omnipulse_pgdata:/var/lib/postgresql/data
+      - ./backend/migrations/001_initial_schema.sql:/docker-entrypoint-initdb.d/001_initial_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d scrapper_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: omnipulse_backend
+    ports:
+      - "8088:8080"
+    command: uvicorn app:app --host 0.0.0.0 --port 8080 --reload
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/scrapper_dev?schema=scraping&connection_limit=5&pool_timeout=10
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - INTERNAL_API_KEY=portfolio-dev-key
+      - AUTH_ENABLED=false
+      - OBS_ENABLED=false
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    volumes:
+      - ./backend:/app
+      - /app/__pycache__
+      - /app/.pytest_cache
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: omnipulse_frontend
+    ports:
+      - "5180:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: omnipulse_rabbitmq
+    ports:
+      - "5674:5672"
+      - "15674:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_port_connectivity"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  omnipulse_pgdata:

@@ -1,0 +1,36 @@
+{
+  "id": 9007199254740993,
+  "handle": "camiseta-basica",
+  "title": "Camiseta Basica",
+  "body_html": "<p>Camiseta 100% algodao</p>",
+  "vendor": "TestBrand",
+  "product_type": "Camisetas",
+  "tags": ["masculino", "basico"],
+  "options": [
+    {"name": "Cor", "position": 1},
+    {"name": "Tamanho", "position": 2}
+  ],
+  "images": [{"src": "https://cdn.shopify.com/img/1.jpg"}],
+  "variants": [
+    {
+      "id": 1111,
+      "sku": "SHOPSKU-001",
+      "price": "99.90",
+      "compare_at_price": "129.90",
+      "available": true,
+      "option1": "Azul",
+      "option2": "M",
+      "title": "Azul / M"
+    },
+    {
+      "id": 1112,
+      "sku": "SHOPSKU-002",
+      "price": "99.90",
+      "compare_at_price": "129.90",
+      "available": false,
+      "option1": "Preto",
+      "option2": "G",
+      "title": "Preto / G"
+    }
+  ]
+}

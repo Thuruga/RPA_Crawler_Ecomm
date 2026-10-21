@@ -1,0 +1,105 @@
+{
+  "colors": [
+    "preto",
+    "branco",
+    "azul",
+    "verde",
+    "cinza",
+    "marrom",
+    "bege",
+    "vermelho",
+    "amarelo",
+    "roxo",
+    "rosa",
+    "laranja",
+    "khaki",
+    "creme",
+    "off-white"
+  ],
+  "brand_names": [
+    "aramis",
+    "reserva",
+    "tommy",
+    "hilfiger",
+    "lacoste",
+    "polo",
+    "ralph",
+    "lauren"
+  ],
+  "category_words": [
+    "camisa",
+    "camiseta",
+    "polo",
+    "tenis",
+    "sapatenis",
+    "calca",
+    "bermuda",
+    "shorts",
+    "jaqueta",
+    "casaco",
+    "moletom",
+    "masculino",
+    "masculina",
+    "feminino"
+  ],
+  "stop_words": [
+    "de",
+    "da",
+    "do",
+    "em",
+    "no",
+    "na",
+    "os",
+    "as",
+    "um",
+    "uma",
+    "com",
+    "para",
+    "que",
+    "se",
+    "ao",
+    "ou",
+    "e",
+    "a",
+    "o"
+  ],
+  "noise_words": [
+    "patrocinado",
+    "anuncio",
+    "sponsored"
+  ],
+  "known_brands_for_brand_detection": [
+    "aramis",
+    "reserva",
+    "tommy"
+  ],
+  "category_synonyms": {
+    "tenis": [
+      "tenis",
+      "sapatenis",
+      "calçado",
+      "shoe"
+    ],
+    "camisa": [
+      "camisa",
+      "shirt"
+    ],
+    "camiseta": [
+      "camiseta",
+      "t-shirt",
+      "tshirt"
+    ],
+    "polo": [
+      "polo"
+    ],
+    "calca": [
+      "calca",
+      "trouser",
+      "pants"
+    ],
+    "bermuda": [
+      "bermuda",
+      "shorts"
+    ]
+  }
+}

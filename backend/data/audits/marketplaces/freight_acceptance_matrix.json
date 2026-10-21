@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "integrations": {
+    "vtex": {
+      "product_url": "https://aramis.com.br/polo-manga-curta-basica-piquet-branco-po-10-0278-001/p"
+    },
+    "shopify": {
+      "product_url": "https://www.ricardoalmeida.com.br/products/camisa-polo-interloque-44-1-manga-curta-cinza-64859-76775"
+    },
+    "wake": {
+      "product_url": "https://www.richards.com.br/produto/polo-pima-basic-grafite-166055"
+    },
+    "mercado_livre": {
+      "product_url": "https://mercadolivre.com.br/camisa-aramis-manga-longa-regular-sarja-mista/up/MLBU3774729589"
+    },
+    "amazon": {
+      "product_url": "https://amazon.com.br/T%C3%AAnis-Aramis-Icon-Light-Masculino/dp/B0FZD1GZHN"
+    },
+    "netshoes": {
+      "product_url": "https://netshoes.com.br/p/camisa-aramis-manga-longa-regular-sarja-mista-G06-760N-040"
+    }
+  },
+  "ceps": [
+    "01310100",
+    "90010150",
+    "70040010",
+    "40020000",
+    "69010001"
+  ]
+}

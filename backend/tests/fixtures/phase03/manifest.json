@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "fixtures": [
+    {
+      "file": "conditional_offer_wire.json",
+      "source_url": "https://contract.example.test/phase03/conditional-offer-wire",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["generated from local Pydantic model_dump_json and FastAPI route serialization", "synthetic identifiers and no account or session data"],
+      "sha256": "e22b616d99735fc43fa94b91eb66153ffd8ea38ae358185f459acf8ff378211f",
+      "parser": "conditional_offer_wire_contract",
+      "expected": {"decimal_json_type": "string", "price": "509.15", "discount_value": "15", "discount_unit": "percent", "domain_discount_unit": "%"},
+      "scope": {"brand": "reserva", "product_id": "104962", "sku_id": "638383", "seller_id": "1"}
+    },
+    {
+      "file": "reserva_prime_rule.json",
+      "source_url": "https://www.usereserva.com/_v/rsv-prime/primepromotion",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["retained only public rule fields", "removed transport metadata"],
+      "sha256": "8e88ab53435a4393d958c556b630f4ae845a432a0422cb6ce29a26488c522d2d",
+      "parser": "reserva_prime_rule",
+      "expected": {"status": "found", "state": "confirmed", "condition_type": "membership", "discount_percent": 15.0, "price": 509.15},
+      "scope": {"brand": "reserva", "product_id": "104962", "sku_id": "638383", "seller_id": "1"}
+    },
+    {
+      "file": "reserva_catalog_product.json",
+      "source_url": "https://www.usereserva.com/api/catalog_system/pub/products/search/camisa-ml-flanela-speed-0101579-195/p",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["retained one representative SKU and seller", "removed images and descriptive fields"],
+      "sha256": "f0c893943e9cb62176588a932cf352317f8c549ce89597ca5d215e2aa9b77a20",
+      "parser": "vtex_catalog",
+      "expected": {"status": "none_detected", "public_price": 599.0, "conditional_price": 509.15},
+      "scope": {"brand": "reserva", "product_id": "104962", "sku_id": "638383", "seller_id": "1"}
+    },
+    {
+      "file": "vtex_teasers.json",
+      "source_url": "https://store.example.test/api/catalog_system/pub/products/search/product/p",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic host", "retained one public teaser"],
+      "sha256": "28cab04e80ac9eec8b651ae49cf0c4a5ba083cf0329d3eb903d12e64ec112351",
+      "parser": "vtex_teaser",
+      "expected": {"status": "found", "state": "advertised", "condition_type": "payment_method", "discount_percent": 10.0},
+      "scope": {"product_id": "vtex-100", "sku_id": "vtex-sku-1", "seller_id": "1"}
+    },
+    {
+      "file": "vtex_checkout_confirmed.json",
+      "source_url": "https://store.example.test/api/checkout/pub/orderForms/simulation",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["removed order-form identity", "retained one anonymous simulated line"],
+      "sha256": "427a5649af5d94d2a747e36674d23bb683e28dc16d8b4f6afabb8594b58af19c",
+      "parser": "vtex_checkout",
+      "expected": {"status": "found", "state": "confirmed", "price": 180.0},
+      "scope": {"sku_id": "vtex-sku-1", "seller_id": "1", "quantity": 1}
+    },
+    {
+      "file": "shopify_product.json",
+      "source_url": "https://shop.example.test/products/camiseta-essencial.js",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic identifiers", "removed media and vendor metadata"],
+      "sha256": "b9675d81d9b44d0f324940dba252e322aacc4716735adfd9c57da1591206cb91",
+      "parser": "shopify_product",
+      "expected": {"status": "found", "state": "advertised", "condition_type": "payment_method"},
+      "scope": {"product_id": "10001", "sku_id": "20001"}
+    },
+    {
+      "file": "shopify_cart_discount.json",
+      "source_url": "https://shop.example.test/cart.js",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["removed cart identity", "retained one anonymous simulated line"],
+      "sha256": "d900594feb7cb8d71d3f9619707c6e0e93e0e529c9970ae241437b1a8f629035",
+      "parser": "shopify_cart",
+      "expected": {"status": "found", "state": "confirmed", "price": 116.1},
+      "scope": {"sku_id": "20001", "quantity": 1}
+    },
+    {
+      "file": "wake_offer.html",
+      "source_url": "https://wake.example.test/produto/wake-1",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic minimal markup", "no platform endpoint asserted"],
+      "sha256": "314fec15d88465c26cd6618343cbc7e76af7f2340f3e39fb1505d94ec56659c2",
+      "parser": "html_offer",
+      "expected": {"status": "found", "state": "advertised", "condition_type": "payment_method"},
+      "scope": {"product_id": "wake-1"}
+    },
+    {
+      "file": "zara_offer.html",
+      "source_url": "https://zara.example.test/br/pt/producto/zara-1.html",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic minimal markup", "diagnostic evidence only"],
+      "sha256": "e64a9768cd6db20324b18fa15d0195b75b4269af9d48ba7946c4ec9d7685fa4f",
+      "parser": "html_offer",
+      "expected": {"status": "found", "state": "advertised", "condition_type": "checkout"},
+      "scope": {"product_id": "zara-1"}
+    },
+    {
+      "file": "html_pix_partial_scope.html",
+      "source_url": "https://www.reserva.ink/camisa-ml-flanela-speed",
+      "captured_at": "2026-07-15T00:00:00Z",
+      "sanitization": ["synthetic minimal markup", "same literal benefit label as the paired checkout fixture, deliberately, to reproduce GAP-02 real-adapter complementary scope"],
+      "sha256": "b5152cce8afc0580bff2d2eb4e6c1d7415233a6af2d8e5de9c93fa759011b483",
+      "parser": "html_offer",
+      "expected": {"status": "found", "state": "advertised", "condition_type": "payment_method", "price": 180.0},
+      "scope": {"product_id": "p-1"}
+    },
+    {
+      "file": "vtex_checkout_pix_partial_scope.json",
+      "source_url": "https://store.example.test/api/checkout/pub/orderForms/simulation",
+      "captured_at": "2026-07-15T00:00:00Z",
+      "sanitization": ["removed order-form identity", "retained one anonymous simulated line", "same literal benefit label as the paired HTML fixture, deliberately, to reproduce GAP-02 real-adapter complementary scope"],
+      "sha256": "a34985370e78282b32ce79c1c9a0a9517a2f2a60df9367d1fda2b0a6a827f1c4",
+      "parser": "vtex_checkout",
+      "expected": {"status": "found", "state": "confirmed", "price": 180.0},
+      "scope": {"sku_id": "sku-1", "seller_id": "1"}
+    },
+    {
+      "file": "html_offer.html",
+      "source_url": "https://generic.example.test/products/bundle-1",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic minimal markup"],
+      "sha256": "8a09aa91b03416dc32248d400e116138ee3caf48848d040ba509dcdc77b743c9",
+      "parser": "html_offer",
+      "expected": {"status": "found", "state": "advertised", "condition_type": "quantity", "quantity_required": 3, "price": 100.0},
+      "scope": {"product_id": "bundle-1", "quantity": 3}
+    },
+    {
+      "file": "html_no_offer.html",
+      "source_url": "https://generic.example.test/products/plain-1",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic minimal markup"],
+      "sha256": "aa2024bf11d95caa93bf57f4eeddc7bd454287f7e8e8b3b11f7e25da4bb88d89",
+      "parser": "html_offer",
+      "expected": {"status": "none_detected", "offers": []},
+      "scope": {"product_id": "plain-1"}
+    },
+    {
+      "file": "auth_required.html",
+      "source_url": "https://generic.example.test/products/member-1",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic login prompt", "no account data"],
+      "sha256": "d45e539d3fb160b2a0040248d4db155dc72ad4981e25015f64e1f51e51199649",
+      "parser": "html_offer",
+      "expected": {"status": "requires_auth", "offers": []},
+      "scope": {"product_id": "member-1"}
+    },
+    {
+      "file": "blocked_403.json",
+      "source_url": "https://generic.example.test/products/blocked-1",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic error payload", "removed request metadata"],
+      "sha256": "c4cf170a2fd239bee8344dde203e060790544d6958b8be2470618a680432850d",
+      "parser": "http_status",
+      "expected": {"status": "blocked", "offers": []},
+      "scope": {"product_id": "blocked-1"}
+    },
+    {
+      "file": "unexpected_schema.json",
+      "source_url": "https://generic.example.test/products/schema-1",
+      "captured_at": "2026-07-14T00:00:00Z",
+      "sanitization": ["synthetic malformed contract"],
+      "sha256": "09363d9f4914975d24c4837c637676763fcebb2505848a3c1a33fa4aa2dacd9b",
+      "parser": "generic_json",
+      "expected": {"status": "error", "offers": []},
+      "scope": {"product_id": "schema-1"}
+    }
+  ]
+}
