@@ -152,10 +152,9 @@ O frontend foi desenvolvido do zero com estética **Fintech / Cyber Dark**, prio
 ## 👨‍💻 Autor
 
 Desenvolvido por **Arthur Correia**  
-Engenheiro de Software | Especialista em Automação RPA, Arquitetura Distribuída & Web Scraping
 
 ---
 
 ## 📄 Licença
 
-Projeto desenvolvido para fins de demonstração técnica e portfólio de engenharia de software.
+Projeto desenvolvido para fins de demonstração técnica e portfólio.
